@@ -29,8 +29,8 @@ span#a33 {
           <a href="https://vuetifyjs.com/" target="_blank">
             <v-img width="25px" cover src="/img/vuetify.svg" /> </a
           >&nbsp;
-          <a href="https://blender.org/" target="_blank">
-            <v-img width="25px" cover src="/img/blender.svg" /> </a
+          <a href="https://spline.design/" target="_blank">
+            <v-img width="25px" cover src="/img/spline.png" /> </a
           >&nbsp; {{ year > 2023 ? "@2023 - " : " @" }} {{ year }}
           &nbsp;&nbsp;&nbsp;
           <span class="d-sm-flex-inline" id="a33">Olaf Reitmaier</span>
