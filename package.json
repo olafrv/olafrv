@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@splinetool/runtime": "^0.9.202",
+    "@splinetool/runtime": "^0.9.486",
     "pinia": "^2.0.29",
     "vite-plugin-vuetify": "^1.0.1",
     "vue": "^3.2.45",

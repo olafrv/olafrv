@@ -42,7 +42,7 @@ function onClick(item) {
             image="https://avatars.githubusercontent.com/u/987499?s=48&v=4"
             size="32"
           ></v-avatar>
-          Olaf Reitmaier
+          &nbsp;&nbsp;&nbsp;Olaf Reitmaier
         </template>
         <template v-slot:append>
           <v-btn
