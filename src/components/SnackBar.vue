@@ -6,20 +6,18 @@ const { visible, text } = storeToRefs(store)
 </script>
 
 <template>
-    <v-container>
-        <v-snackbar
-            v-model="visible"
-        >
-            {{ text }}
-            <template v-slot:actions>
-                <v-btn
-                    color="pink"
-                    variant="text"
-                    @click="visible = false"
-                >
-                    OK
-                </v-btn>
-            </template>
-        </v-snackbar>
-    </v-container>
+    <v-snackbar
+        v-model="visible"
+    >
+        {{ text }}
+        <template v-slot:actions>
+            <v-btn
+                color="pink"
+                variant="text"
+                @click="visible = false"
+            >
+                OK
+            </v-btn>
+        </template>
+    </v-snackbar>
 </template>

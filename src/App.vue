@@ -13,12 +13,14 @@
 
 <template>
   <v-app :theme="theme">
-    <LeftBar />
-    <TopBar @themeChanged="setTheme()" :theme="theme" />
-    <v-main>
-      <router-view />
-      <PageFooter />  
-    </v-main>
-    <SnackBar />
+    <v-layout>
+      <LeftBar />
+      <TopBar @themeChanged="setTheme()" :theme="theme" />
+      <SnackBar />
+      <v-main>
+        <router-view />
+        <PageFooter />
+      </v-main>
+    </v-layout>
   </v-app>
 </template>

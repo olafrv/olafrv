@@ -1,6 +1,7 @@
 # Olaf Reitmaier
 
 ![Node.js CI](https://github.com/olafrv/olafrv.github.io/actions/workflows/node.yml/badge.svg)
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/clx9.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 
 Just my personal Website  https://www.olafrv.com/ and its related software stack.
 
@@ -31,7 +32,7 @@ Third, visit https://olafrv.github.io after commit and push.
 
 * https://vitejs.dev/config/
 * https://www.npmjs.com/package/vite-plugin-vuetify
-* https://vuejs.org/guide/essentials/component-basics.html#dynamic-components (Dynamic/Manual Import Edge Case)
+* https://vuejs.org/guide/essentials/component-basics.html#dynamic-components
 
 ### VueJS
 
@@ -44,9 +45,15 @@ Third, visit https://olafrv.github.io after commit and push.
 * https://next.vuetifyjs.com/en/features/treeshaking/
 
 ### Vue Router
+
 * https://router.vuejs.org/guide/#javascript
 
+### Pinia
+
+* https://pinia.esm.dev/
+
 ### Material Design
+
 * https://m2.material.io/
 * https://pictogrammers.com/library/mdi/
 
@@ -59,7 +66,7 @@ Third, visit https://olafrv.github.io after commit and push.
 
 ### GitHub Pages & Actions
 
-> Don't forget GitHub Pages (Select branch) and Workflow (Add permissions)
+> Don't forget GitHub Pages > Select branch and Workflow > Add permissions
 
 * https://vitejs.dev/guide/static-deploy.html
 * https://docs.github.com/en/pages/quickstart

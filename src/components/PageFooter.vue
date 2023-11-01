@@ -1,5 +1,16 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 const year = new Date().getFullYear();
+const icons = ref([
+  {src: "/img/vite.svg", width:"20px", url: "https://vitejs.dev/"},
+  {src: "/img/vue.svg",width:"20px", url:"https://vuejs.org/"},
+  {src: "/img/vuetify.svg",width:"18px", url:"https://vuetifyjs.com/"},
+  {src: "/img/spline.png",width:"20px", url:"https://spline.design/"},
+  {src: "/img/blender.svg",width:"24px", url:"https://blender.org/"},
+])
+function onClick(url) {
+    window.open(url, '_blank')
+}
 </script>
 
 <style scoped>
@@ -7,48 +18,31 @@ const year = new Date().getFullYear();
 
 span#a33 {
   font-family: "Mr Dafoe";
-  font-size: 2.5em;
+  font-size: 1.2em;
   color: white;
   text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
   transform: rotate(0deg);
 }
 </style>
 
-<template>
-  <v-footer>
-    <v-container>
-      <v-row>
-        <v-col class="text-body-2 text-center align-center">
-          Made with:&nbsp;
-          <a href="https://vitejs.dev/" target="_blank">
-            <v-img inline width="25px" src="/img/vite.svg"
-              :aspect-ratio="1"
-            ></v-img>
-          </a>&nbsp;
-          <a href="https://vuejs.org/" target="_blank">
-            <v-img inline width="25px" src="/img/vue.svg"
-              :aspect-ratio="1"
-            ></v-img>
-          </a>&nbsp;
-          <a href="https://vuetifyjs.com/" target="_blank">
-            <v-img inline width="25px" 
-            :aspect-ratio="1" src="/img/vuetify.svg"
-            ></v-img>
-          </a>&nbsp;
-          <a href="https://spline.design/" target="_blank">
-            <v-img inline width="25px" 
-              :aspect-ratio="1" src="/img/spline.png"
-            ></v-img>
-          </a>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col class="text-body-2 text-center align-center">
-          {{ year > 2023 ? "@2023 - " : " @" }} {{ year }}
-          &nbsp;&nbsp;&nbsp;
-          <span id="a33" style="font-size: x-large;">Olaf Reitmaier</span>
-        </v-col>
-      </v-row>
-    </v-container>
+<template> 
+  <v-footer class="text-center d-flex flex-column bg-transparent">
+    <br/>
+    <div>
+      <v-img
+        v-for="icon in icons"
+        :key="icon.src" :src="icon.src" :width="icon.width"
+        inline @click="onClick(icon.url)"
+      ></v-img>
+      &nbsp;
+      <a href="https://github.com/olafrv/olafrv.github.io" target="_blank">[Source]</a>
+    </div>
+    <v-divider></v-divider>
+    <div>
+      {{ year > 2022 ? "@2022 - " : " @" }} {{ year }}
+      &nbsp;
+      <span id="a33">Olaf Reitmaier</span>
+    </div>
+    <v-divider></v-divider>
   </v-footer>
 </template>

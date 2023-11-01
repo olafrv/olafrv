@@ -1,19 +1,21 @@
-<template>
-<!--
-    <v-container class="d-lg-flex align-center justify-center">
-        <v-img cover src="/img/ovni.png" />
-    </v-container>
--->
-    <v-container class="d-lg-flex align-center justify-center">
-        <canvas ref="canvas"></canvas>
-    </v-container>
-</template>
 <script setup>
 import { Application } from '@splinetool/runtime';
 import { ref , onMounted } from 'vue'
+import LoadSpinner from '../components/LoadSpinner.vue'
+const loading = ref(true);
 const canvas = ref(null)
 onMounted(()=>{
+
     const app = new Application(canvas.value);
-    app.load('https://prod.spline.design/6KOeVzZFzpWkosQo/scene.splinecode?t=' + Math.random());
+    const url = 'https://prod.spline.design/6KOeVzZFzpWkosQo/scene.splinecode?t=' + Math.random();
+    app.load(url).then(()=>{
+        loading.value = false;
+    });
 })
 </script>
+<template>
+    <v-container class="text-center d-flex flex-column">
+        <LoadSpinner v-show="loading"/>
+        <canvas ref="canvas" v-show="`!loading`"></canvas>
+    </v-container>
+</template>
