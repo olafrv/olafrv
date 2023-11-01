@@ -6,27 +6,24 @@ Just my personal Website  https://www.olafrv.com/ and its related software stack
 
 ## Development
 
-First:
+First, setup your development environment:
 
 * [Ubuntu Linux](https://ubuntu.com/)
 * [Visual Studio Code](https://code.visualstudio.com/).
 * [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-* [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-Second:
+Second, install the app and test it locally:
 
 ```
 # Install NodeJS in Ubuntu Linux (Jammy):
 apt -y update
 apt -y install make
 make install
-# Available npm run commands:
 npm run -l
+npm run dev
 ```
 
-Third:
-
-Visit the preview at https://olafrv.github.io after commit.
+Third, visit https://olafrv.github.io after commit and push.
 
 ## References
 
