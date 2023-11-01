@@ -21,11 +21,17 @@ onMounted(()=>{
 })
 const router = useRouter();
 function onClick(articleMdFile) {
-    const resolvedRoute = router.resolve({
+    router.push({
         path: 'article',
         query: { name: articleMdFile.replace(".md","") }
-    })
-    window.open(resolvedRoute.href, '_blank')
+    });
+    /* It won't work on github
+        const resolvedRoute = router.resolve({
+            path: 'article',
+            query: { name: articleMdFile.replace(".md","") }
+        })
+        window.open(resolvedRoute.href, '_blank')
+    */
 }
 </script>
 <template>
