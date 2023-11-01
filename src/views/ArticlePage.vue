@@ -12,7 +12,7 @@ const tMeta = ref({})
 const meta = ref({})  // do not rename
 const route = useRoute()
 const articleName = ref(route.query.name)
-const fileUrl = '/articles/md/' + articleName.value + '.md'
+const fileUrl = '/blog/md/' + articleName.value + '.md'
 
 onMounted(()=>{
     axios.get(fileUrl)

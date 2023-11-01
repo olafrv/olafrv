@@ -3,7 +3,7 @@
 # tree -J --noreport -r --sort=name md > md.json
 
 curdir=$(pwd)
-cd ../public/articles/
+cd ../public/blog/
 outfile=articles.json
 echo "[" > $outfile
 first=1

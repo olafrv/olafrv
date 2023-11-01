@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const articles = ref([]);
 onMounted(()=>{
-    const file = '/articles/articles.json'
+    const file = '/blog/articles.json'
     axios.get(file).then(function (response){
         var data = response.data
         data.forEach(function(element, index){
@@ -39,7 +39,7 @@ function onClick(articleMdFile) {
                     <template v-slot:title>
                         <span class="text-wrap">
                         <v-avatar>
-                            <v-img :src="`/articles/img/${item.imgfile}`"></v-img>
+                            <v-img :src="`/blog/img/${item.imgfile}`"></v-img>
                         </v-avatar>
                         &nbsp;
                         <a @click="onClick(item.mdfile)">{{ item.title }}</a>
