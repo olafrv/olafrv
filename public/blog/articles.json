@@ -12,7 +12,7 @@
 ,{"mdfile":"20171203-replicacion-mysql.md","imgfile":"mysql.jpg"}
 ,{"mdfile":"20171123-ciberseguridad-nube.md","imgfile":"ciberseguridad.png"}
 ,{"mdfile":"20170520-continuidad-operativa.md","imgfile":"continuidad.png"}
-,{"mdfile":"20170518-netdump.md","imgfile":"netdump.png"}
+,{"mdfile":"20170518-remote-network-devices-backup.md","imgfile":"netdump.png"}
 ,{"mdfile":"20170320-distributed-web-cluster-lapp.md","imgfile":"dist_lapp.png"}
 ,{"mdfile":"20170118-backup-aas-architecture.md","imgfile":"backup.png"}
 ,{"mdfile":"20161125-mysql-ha-solutions.md","imgfile":"mysql.jpg"}
@@ -20,7 +20,7 @@
 ,{"mdfile":"20160901-lineamientos-de-prueba-de-red-ip.md","imgfile":"ping.png"}
 ,{"mdfile":"20160829-estructura-almacenamiento-virtualizado.md","imgfile":"estructura-almacenamiento-virtualizado.png"}
 ,{"mdfile":"20160623-transparent-layer-2-bandwidth-shaper.md","imgfile":"mikrotik-shaper.png"}
-,{"mdfile":"20160601-dandwidth-control-cisco-mikrotik.md","imgfile":"cisco-mikrotik-shaper.png"}
+,{"mdfile":"20160601-bandwidth-control-cisco-vs-mikrotik.md","imgfile":"cisco-mikrotik-shaper.png"}
 ,{"mdfile":"20160401-arquitectura-de-nube.md","imgfile":"nube.png"}
 ,{"mdfile":"20150119-stonith-plugin-agent-for-vmware-vcenter.md","imgfile":"peacemaker.png"}
 ,{"mdfile":"20131219-subversion-al-grano.md","imgfile":"subversion.png"}
@@ -74,7 +74,6 @@
 ,{"mdfile":"20100119-script-to-download-debian-like-repositories.md","imgfile":"linux.jpg"}
 ,{"mdfile":"20100119-script-to-backup-files-and-database.md","imgfile":"linux.jpg"}
 ,{"mdfile":"20100119-restart-a-movilmax-router-when-internet-is-down.md","imgfile":"linux.jpg"}
-,{"mdfile":"20100119-installing-ubuntu-7-04-on-acer-aspire-3661-wlmi.md","imgfile":"ubuntu.png"}
 ,{"mdfile":"20100119-high-availability-load-balancing-and-replication-on-linux.md","imgfile":"cluster.png"}
 ,{"mdfile":"20100119-hamachi-debian-daemon-following-debian-policy.md","imgfile":"linux.jpg"}
 ,{"mdfile":"20100119-debian-apache-web-tomcat-postgresql-setup.md","imgfile":"apache.png"}

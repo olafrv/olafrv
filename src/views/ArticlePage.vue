@@ -44,7 +44,7 @@ onMounted(()=>{
 </style>
 <template>
     <v-container>
-        <v-col v-if="error==false">
+        <v-col v-if="!error">
             <v-row class="text-center">
                 <h1>{{ tMeta.title }}</h1>
             </v-row>
@@ -52,13 +52,13 @@ onMounted(()=>{
                 <div v-html="tHtml"></div>
             </v-row>
         </v-col>
-        <span v-else>
+        <v-col v-else>
             <v-icon 
                 color="warning"
                 icon="mdi-alert" 
                 size="large"
             />
             Article '{{ articleName }}' not found.
-        </span>
+        </v-col>
     </v-container>
 </template>

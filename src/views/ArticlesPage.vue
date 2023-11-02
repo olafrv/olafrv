@@ -21,16 +21,28 @@ onMounted(()=>{
 })
 const router = useRouter();
 function onClick(articleMdFile) {
+    // GitHub Trick
+    router.push({
+        path: '/',
+        query: { 
+            article: 'redirect',
+            name: articleMdFile.replace(".md","") 
+        }
+    });
+    /* 
+    // Normal - Current Tab
     router.push({
         path: 'article',
         query: { name: articleMdFile.replace(".md","") }
     });
-    /* It won't work on github
-        const resolvedRoute = router.resolve({
-            path: 'article',
-            query: { name: articleMdFile.replace(".md","") }
-        })
-        window.open(resolvedRoute.href, '_blank')
+    */
+    /*
+    // Normal - New Tab
+    const resolvedRoute = router.resolve({
+        path: 'article',
+        query: { name: articleMdFile.replace(".md","") }
+    })
+    window.open(resolvedRoute.href, '_blank')
     */
 }
 </script>
