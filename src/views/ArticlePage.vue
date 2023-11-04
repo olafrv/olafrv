@@ -6,10 +6,9 @@ import metadata_block from 'markdown-it-metadata-block'
 import yaml from 'yaml'
 import axios from 'axios'
 
-const error = ref(true)
-const tHtml = ref("")
-const tMeta = ref({})
-const meta = ref({})  // do not rename
+const error = ref(false)
+const mdHtml = ref("")
+const mdMeta = ref({})
 const route = useRoute()
 const articleName = ref(route.query.name)
 const fileUrl = '/blog/md/' + articleName.value + '.md'
@@ -26,39 +25,39 @@ onMounted(()=>{
                 metadata_block,
                 {
                     parseMetadata: yaml.parse,
-                    meta
+                    meta: mdMeta.value
                 }
             )
-            tMeta.value = meta
-            tHtml.value = mdi.render(response.data)
-            error.value = false
+            mdHtml.value = mdi.render(response.data)
         }).catch((reason)=>{
             error.value = true
         })
 })
 </script>
+
 <style scoped>
 :deep(*) {
     all: revert;
 }
 </style>
+
 <template>
     <v-container>
-        <v-col v-if="!error">
-            <v-row class="text-center">
-                <h1>{{ tMeta.title }}</h1>
+        <v-col>
+            <v-row v-if="error">
+                <v-icon 
+                    color="warning"
+                    icon="mdi-alert" 
+                    size="large"
+                />
+                Article '{{ articleName }}' not found.
+            </v-row>
+            <v-row v-if="!error" class="text-center">
+                <h1 v-html="mdMeta.title"></h1>
             </v-row>
             <v-row>
-                <div v-html="tHtml"></div>
+                <div v-html="mdHtml"></div>
             </v-row>
-        </v-col>
-        <v-col v-else>
-            <v-icon 
-                color="warning"
-                icon="mdi-alert" 
-                size="large"
-            />
-            Article '{{ articleName }}' not found.
         </v-col>
     </v-container>
 </template>
