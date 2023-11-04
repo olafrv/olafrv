@@ -1,5 +1,5 @@
 ---
-title: Multi-Cloud Connection
+title: Multi-Cloud Connection Architecture
 image: mcc.png
 created: 2018/08/01
 ---

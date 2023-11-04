@@ -4,9 +4,9 @@
 ,{"mdfile":"20181101-on-premise-private-cloud.md","imgfile":"private_cloud.png"}
 ,{"mdfile":"20181101-cloud-managed-services.md","imgfile":"cms.png"}
 ,{"mdfile":"20181001-container-deployment-strategy.md","imgfile":"docker.png"}
-,{"mdfile":"20180801-multicloud-connection.md","imgfile":"mcc.png"}
+,{"mdfile":"20180801-multicloud-connection-architecture.md","imgfile":"mcc.png"}
 ,{"mdfile":"20180620-reference-archicture-bgp-gslb-slb.md","imgfile":"gslb.png"}
-,{"mdfile":"20180610-software-engineering.md","imgfile":"ingsw.png"}
+,{"mdfile":"20180610-software-engineering-devops.md","imgfile":"ingsw.png"}
 ,{"mdfile":"20180520-digital-transformation.md","imgfile":"dx.png"}
 ,{"mdfile":"20180313-hypercloud-capex-opex.md","imgfile":"capex_opex_hypercloud.png"}
 ,{"mdfile":"20171123-cloud-cybersecurity.md","imgfile":"ciberseguridad.png"}
