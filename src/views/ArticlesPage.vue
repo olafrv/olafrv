@@ -14,7 +14,7 @@ onMounted(()=>{
                 .replace(".md","")
                 .replaceAll("-"," ")
                 .replace(/\b\w/g, l => l.toUpperCase())
-                .replace(/\d+\s/, '')
+                // .replace(/\d+\s/, '')
         });
         articles.value = data;
     })
