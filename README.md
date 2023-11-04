@@ -1,7 +1,7 @@
 # Olaf Reitmaier
 
-![Node.js CI](https://github.com/olafrv/olafrv.github.io/actions/workflows/node.yml/badge.svg)
-[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/clx9.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+[![Node.js CI](https://github.com/olafrv/olafrv.github.io/actions/workflows/node.yml/badge.svg)](https://github.com/olafrv/olafrv.github.io/actions)
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/clx9.svg)](https://status.olafrv.com/)
 
 Just my personal Website  https://www.olafrv.com/ and its related software stack.
 
