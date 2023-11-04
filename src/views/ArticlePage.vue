@@ -58,6 +58,17 @@ onMounted(()=>{
             <v-row>
                 <div v-html="mdHtml"></div>
             </v-row>
+            <v-row>
+                <span style="font-size: 10px;">
+                    <b>DISCLAIMER:</b> All the content of this website is informative and non-commercial, 
+                    does not imply a commitment to develop, launch or schedule delivery 
+                    of any feature or functionality, should not rely on it in making decisions, 
+                    incorporate or take it as a reference in a contract or academic matters. 
+                    Likewise, the use, distribution and reproduction by any means, 
+                    in whole or in part, without the authorization of the author 
+                    and / or third-party copyright holders, as applicable, is prohibited.
+                </span>
+            </v-row>
         </v-col>
     </v-container>
 </template>
