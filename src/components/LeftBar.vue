@@ -9,8 +9,8 @@ const items = ref([
   { title: 'Home', icon: 'mdi-home-city', path: '/' },
   { title: 'Resume', icon: 'mdi-linkedin', path: 'https://www.linkedin.com/in/olafrv' },
   { title: 'Projects', icon: 'mdi-github', path: 'https://github.com/olafrv' },
+  { title: 'Articles', icon: 'mdi-paperclip', path: '/articles' },
   { title: 'Quiniela', icon: 'mdi-soccer', path: 'http://www.olafrv.com/futbol' },
-  { title: 'Slideshows', icon: 'mdi-play-box-outline', path: '/articles' },
   { title: 'Status', icon: 'mdi-traffic-light', path: 'https://status.olafrv.com/' },
 ]);
 const router = useRouter();

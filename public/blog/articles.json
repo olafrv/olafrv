@@ -1,7 +1,8 @@
 [
-{"mdfile":"20231005-aws-graviton3-and-gp3.md","imgfile":"aws.png"}
+{"mdfile":"20230301-rabbitmq-status-quo-critical-review.md","imgfile":"aws.png"}
 ,{"mdfile":"20230201-kubernetes-workload-rebalancing.md","imgfile":"k8s.png"}
 ,{"mdfile":"20230201-kubeadm-eks-iam-roles-madness.md","imgfile":"aws.png"}
+,{"mdfile":"20221005-aws-graviton3-and-gp3.md","imgfile":"aws.png"}
 ,{"mdfile":"20220901-aws-cost-optimizations-risks.md","imgfile":"aws.png"}
 ,{"mdfile":"20201007-aws-network-architecture-rework.md","imgfile":"aws.png"}
 ,{"mdfile":"20190512-sre-organizational-framework.md","imgfile":"sre.png"}
