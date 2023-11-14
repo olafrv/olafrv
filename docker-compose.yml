@@ -1,0 +1,14 @@
+version: '3'
+# networks:
+#  frontend:
+#    name: olafrv_com_frontend
+#    driver: bridge
+services:
+  nginx:
+    container_name: olafrv_com_nginx
+    image: olafrv_com_nginx:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
+#    networks:
+#      - frontend
