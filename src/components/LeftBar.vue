@@ -10,7 +10,7 @@ const items = ref([
   { title: 'Resume', icon: 'mdi-linkedin', path: 'https://www.linkedin.com/in/olafrv' },
   { title: 'Projects', icon: 'mdi-github', path: 'https://github.com/olafrv' },
   { title: 'Articles', icon: 'mdi-paperclip', path: '/articles' },
-  { title: 'Quiniela', icon: 'mdi-soccer', path: window.location.origin + '/futbol/' },
+  { title: 'Quiniela', icon: 'mdi-soccer', path: 'https://app.olafrv.com/futbol/' },
   { title: 'Status', icon: 'mdi-traffic-light', path: 'https://status.olafrv.com/' },
 ]);
 const router = useRouter();
