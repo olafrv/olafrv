@@ -9,5 +9,3 @@ Interoperability Platform in the Framework of Decree 3390. 3rd National Free Sof
 <div class="text-center">
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/2WwduOeJth5bCs" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/olafrv/plataforma-de-interoperabilidad-del-instituciones-gubernamentales" title="Plataforma de Interoperabilidad del Instituciones Gubernamentales" target="_blank">Plataforma de Interoperabilidad del Instituciones Gubernamentales</a> </strong> from <strong><a href="https://www.slideshare.net/olafrv" target="_blank">Olaf Reitmaier Veracierta</a></strong> </div>
 </div>
-
-Download [PDF](/wordpress/wp-content/uploads/2010/10/INTEROPERABILIDAD-EGOB-MACZUL-Olaf.pdf)
