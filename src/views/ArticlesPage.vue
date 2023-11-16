@@ -7,40 +7,14 @@ const articles = ref([]);
 onMounted(()=>{
     const file = '/blog/articles.json'
     axios.get(file).then(function (response){
-        var data = response.data
-        data.forEach(function(element, index){
-            data[index].title = 
-                element.mdfile
-                .replace(".md","")
-                .replaceAll("-"," ")
-                .replace(/\b\w/g, l => l.toUpperCase())
-                // .replace(/\d+\s/, '')
-        });
-        articles.value = data;
+        articles.value = response.data.reverse();
     })
 })
 const router = useRouter();
-function onClick(articleMdFile) {
-    /*
-    // GitHub Pages trick when called from HomePage.vue
-    router.push({
-        path: '/',
-        query: { 
-            article: 'redirect',
-            name: articleMdFile.replace(".md","") 
-        }
-    });
-    /* 
-    // Normal - Current Tab
-    router.push({
-        path: 'article',
-        query: { name: articleMdFile.replace(".md","") }
-    });
-    */
-    // Normal - New Tab
+function onClick(id) {
     const resolvedRoute = router.resolve({
         path: 'article',
-        query: { name: articleMdFile.replace(".md","") }
+        query: { id: id }
     })
     window.open(resolvedRoute.href, '_blank')
 }
@@ -56,10 +30,10 @@ function onClick(articleMdFile) {
                     <template v-slot:title>
                         <span class="text-wrap">
                         <v-avatar>
-                            <v-img :src="`/blog/img/${item.imgfile}`"></v-img>
+                            <v-img :src="`/blog/img/${item.img}`"></v-img>
                         </v-avatar>
                         &nbsp;
-                        <a @click="onClick(item.mdfile)">{{ item.title }}</a>
+                        <a @click="onClick(item.id)">{{ item.title }}</a>
                         </span>
                     </template>
                 </v-card>

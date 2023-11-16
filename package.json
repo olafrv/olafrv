@@ -10,19 +10,17 @@
   },
   "dependencies": {
     "@splinetool/runtime": "^0.9.486",
-    "axios": "^1.6.0",
-    "markdown-it": "^13.0.2",
-    "markdown-it-metadata-block": "^1.0.2",
+    "axios": "^1.6.2",
     "pinia": "^2.0.29",
     "vite-plugin-vuetify": "^1.0.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6",
-    "vuetify": "^3.1.2",
-    "yaml": "^2.3.3"
+    "vuetify": "^3.1.2"
   },
   "devDependencies": {
     "@mdi/font": "^7.1.96",
     "@vitejs/plugin-vue": "^4.0.0",
+    "cheerio": "^1.0.0-rc.12",
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-vue": "^9.18.1",

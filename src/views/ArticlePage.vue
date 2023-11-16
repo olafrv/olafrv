@@ -1,37 +1,22 @@
 <script setup>
 import { ref , onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import MarkdownIt from 'markdown-it'
-import metadata_block from 'markdown-it-metadata-block'
-import yaml from 'yaml'
-import axios from 'axios'
+import axios from 'axios';
 
-const error = ref(false)
-const mdHtml = ref("")
-const mdMeta = ref({})
 const route = useRoute()
-const articleName = ref(route.query.name)
-const fileUrl = '/blog/md/' + articleName.value + '.md'
+const id = ref(route.query.id)
+const error = ref(true)
+const article = ref(null)
 
 onMounted(()=>{
-    axios.get(fileUrl)
-        .then((response)=>{
-            const mdi = new MarkdownIt({
-                html: true,
-                linkify: true,
-                breaks: true,
-                xhtmlOut: true
-            }).use(
-                metadata_block,
-                {
-                    parseMetadata: yaml.parse,
-                    meta: mdMeta.value
-                }
-            )
-            mdHtml.value = mdi.render(response.data)
-        }).catch((reason)=>{
-            error.value = true
-        })
+    const file = '/blog/articles.json'
+    axios.get(file).then(function (response){
+        article.value = response.data.find((item) => item.id + "" === id.value)
+        if (article.value != null) {
+            console.log(article.value)
+            error.value = false
+        }
+    })
 })
 </script>
 
@@ -50,15 +35,20 @@ onMounted(()=>{
                     icon="mdi-alert" 
                     size="large"
                 />
-                Article '{{ articleName }}' not found.
+                Article '{{ id }}' not found.
             </v-row>
             <v-row v-if="!error" class="text-center">
-                <h1 v-html="mdMeta.title"></h1>
+                <h1>{{ article.title }}</h1>
             </v-row>
-            <v-row>
-                <div v-html="mdHtml"></div>
+            <v-row v-if="!error" class="text-center">
+                <div class="text-center">
+                    <iframe :src="article.embed_url" :width="article.width" :height="article.height" frameborder="0" 
+                        marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
+                    <br>
+                    <a :href="article.url" target="_blank">Download PDF</a>
+                </div>
             </v-row>
-            <v-row>
+            <v-row v-if="!error" class="text-center">
                 <span style="font-size: 10px;">
                     <b>DISCLAIMER:</b> All the content of this website is informative and non-commercial, 
                     does not imply a commitment to develop, launch or schedule delivery 

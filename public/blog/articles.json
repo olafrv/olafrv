@@ -1,34 +1,354 @@
 [
-{"mdfile":"20230301-rabbitmq-status-quo-critical-review.md","imgfile":"aws.png"}
-,{"mdfile":"20230201-kubernetes-workload-rebalancing.md","imgfile":"k8s.png"}
-,{"mdfile":"20230201-kubeadm-eks-iam-roles-madness.md","imgfile":"aws.png"}
-,{"mdfile":"20221005-aws-graviton3-and-gp3.md","imgfile":"aws.png"}
-,{"mdfile":"20220901-aws-cost-optimizations-risks.md","imgfile":"aws.png"}
-,{"mdfile":"20201007-aws-network-architecture-rework.md","imgfile":"aws.png"}
-,{"mdfile":"20190512-sre-organizational-framework.md","imgfile":"sre.png"}
-,{"mdfile":"20190216-azure-administration-poc.md","imgfile":"azure.svg"}
-,{"mdfile":"20181201-insight-architecture-design.md","imgfile":"insight.png"}
-,{"mdfile":"20181123-business-intelligence-big-data-cloud.md","imgfile":"biucab.png"}
-,{"mdfile":"20181101-on-premise-private-cloud.md","imgfile":"private_cloud.png"}
-,{"mdfile":"20181101-cloud-managed-services.md","imgfile":"cms.png"}
-,{"mdfile":"20181001-container-deployment-strategy.md","imgfile":"docker.png"}
-,{"mdfile":"20180801-multicloud-connection-architecture.md","imgfile":"mcc.png"}
-,{"mdfile":"20180620-reference-archicture-bgp-gslb-slb.md","imgfile":"gslb.png"}
-,{"mdfile":"20180610-software-engineering-devops.md","imgfile":"ingsw.png"}
-,{"mdfile":"20180520-digital-transformation.md","imgfile":"dx.png"}
-,{"mdfile":"20180313-hypercloud-capex-opex.md","imgfile":"capex_opex_hypercloud.png"}
-,{"mdfile":"20171123-cloud-cybersecurity.md","imgfile":"ciberseguridad.png"}
-,{"mdfile":"20170520-operational-continuity.md","imgfile":"continuidad.png"}
-,{"mdfile":"20170320-distributed-web-cluster-lapp.md","imgfile":"dist_lapp.png"}
-,{"mdfile":"20170118-backup-aas-architecture.md","imgfile":"backup.png"}
-,{"mdfile":"20161125-mysql-ha-solutions.md","imgfile":"mysql.jpg"}
-,{"mdfile":"20161101-streaming-architecture.md","imgfile":"streaming.png"}
-,{"mdfile":"20160829-virtual-storage-structure.md","imgfile":"estructura-almacenamiento-virtualizado.png"}
-,{"mdfile":"20160623-transparent-layer-2-bandwidth-shaper.md","imgfile":"mikrotik-shaper.png"}
-,{"mdfile":"20160601-bandwidth-control-cisco-vs-mikrotik.md","imgfile":"cisco-mikrotik-shaper.png"}
-,{"mdfile":"20160401-cloud-architecture.md","imgfile":"nube.png"}
-,{"mdfile":"20131219-subversion-in-a-nutshell.md","imgfile":"subversion.png"}
-,{"mdfile":"20101018-xen-linux-virtualization.md","imgfile":"xendeb.png"}
-,{"mdfile":"20101018-interoperability-platform-3390-decree.md","imgfile":"interop_gov.png"}
-,{"mdfile":"20100119-ha-load-balancing-replication-on-linux.md","imgfile":"cluster.png"}
+  {
+    "title": "Plataforma de Interoperabilidad del Instituciones Gubernamentales",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/plataforma-de-interoperabilidad-del-instituciones-gubernamentales",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=plataforma-de-interoperabilidad-del-instituciones-gubernamentales",
+    "img": "interop_gov.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/2WwduOeJth5bCs",
+    "width": "597",
+    "height": "486",
+    "id": 1
+  },
+  {
+    "title": "Virtualización de GNU/Linux Debian con Xen",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/virtualizacin-conxendebianv3",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=virtualizacin-conxendebianv3",
+    "img": "xendeb.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/KOLql0Dg1DJlDj",
+    "width": "597",
+    "height": "486",
+    "id": 2
+  },
+  {
+    "title": "High Availability, Load Balancing and Replication on Linux",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/high-availability-load-balancing-and-replication-on-linux",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=high-availability-load-balancing-and-replication-on-linux",
+    "img": "cluster.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/24eDptmTvAaEjW",
+    "width": "597",
+    "height": "486",
+    "id": 3
+  },
+  {
+    "title": "Subversion v6",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/subversion-v6",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=subversion-v6",
+    "img": "subversion.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/DGof4xnjRLZStA",
+    "width": "597",
+    "height": "486",
+    "id": 4
+  },
+  {
+    "title": "Hyper-Cloud Services CAPEX/OPEX and Price Estimation",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/an-approach-to-hypercloud-services-capital-and-operational-expenses-and-price-estimation",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=an-approach-to-hypercloud-services-capital-and-operational-expenses-and-price-estimation",
+    "img": "capex_opex_hypercloud.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/LRbW3JGuZdjkAC",
+    "width": "597",
+    "height": "486",
+    "id": 5
+  },
+  {
+    "title": "MySQL HA Solutions (Recopilation)",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/mysql-ha-solutions-recopilation",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=mysql-ha-solutions-recopilation",
+    "img": "mysql.jpg",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/5UyFhqv37I7Ulo",
+    "width": "597",
+    "height": "486",
+    "id": 6
+  },
+  {
+    "title": "Estructura de Almacenamiento Virtualizado",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/estructura-de-almacenamiento-virtualizado",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=estructura-de-almacenamiento-virtualizado",
+    "img": "estructura-almacenamiento-virtualizado.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/wzjEN7aughVL9k",
+    "width": "597",
+    "height": "486",
+    "id": 7
+  },
+  {
+    "title": "Ciberseguridad en la nube",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/ciberseguridad-en-la-nube",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=ciberseguridad-en-la-nube",
+    "img": "ciberseguridad.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/uqq7fwKam6WisA",
+    "width": "597",
+    "height": "486",
+    "id": 8
+  },
+  {
+    "title": "Business intelligence through big data and cloud computing",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/business-intelligence-through-big-data-and-cloud-computing",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=business-intelligence-through-big-data-and-cloud-computing",
+    "img": "biucab.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/dNcfzO3lFJbFX",
+    "width": "597",
+    "height": "486",
+    "id": 9
+  },
+  {
+    "title": "Transformacion Digital",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/transformacion-digital-125036331",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=transformacion-digital-125036331",
+    "img": "dx.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/sc7umAxxieM51T",
+    "width": "597",
+    "height": "486",
+    "id": 10
+  },
+  {
+    "title": "Continuidad Operativa, Conectividad y Seguridad",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/continuidad-operativa-conectividad-y-seguridad",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=continuidad-operativa-conectividad-y-seguridad",
+    "img": "continuidad.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/6YefCRYQqXWCkp",
+    "width": "597",
+    "height": "486",
+    "id": 11
+  },
+  {
+    "title": "Multimedia Streaming Architecture",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/digital-streaming-architecture-125050983",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=digital-streaming-architecture-125050983",
+    "img": "streaming.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/eJCaz5N5MhjjTP",
+    "width": "597",
+    "height": "486",
+    "id": 12
+  },
+  {
+    "title": "On-Premise Private Cloud Architecture",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/onpremise-private-cloud-architecture",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=onpremise-private-cloud-architecture",
+    "img": "private_cloud.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/ltG8kBNYa9zRFr",
+    "width": "597",
+    "height": "486",
+    "id": 13
+  },
+  {
+    "title": "Estrategia para Despliegue de Contenedores (Agile/DevOps)",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/estrategia-para-despliegue-de-contenedores-agiledevops",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=estrategia-para-despliegue-de-contenedores-agiledevops",
+    "img": "docker.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/vWRGPbGRl4mDXv",
+    "width": "597",
+    "height": "486",
+    "id": 14
+  },
+  {
+    "title": "Ingeniería de Software",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/ingeniera-de-software-125084199",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=ingeniera-de-software-125084199",
+    "img": "ingsw.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/hSc4R09uhuJ5KH",
+    "width": "597",
+    "height": "486",
+    "id": 15
+  },
+  {
+    "title": "Managed Cloud Services Revision",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/managed-cloud-services-revision",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=managed-cloud-services-revision",
+    "img": "cms.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/6WALIJp8rXy93c",
+    "width": "597",
+    "height": "486",
+    "id": 16
+  },
+  {
+    "title": "Multi-Cloud Connection Architecture",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/multicloud-connection-architecture-125089127",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=multicloud-connection-architecture-125089127",
+    "img": "mcc.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/cFNz60cSAsNh8X",
+    "width": "597",
+    "height": "486",
+    "id": 17
+  },
+  {
+    "title": "Distributed Web Cluster (LAPP)",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/stretched-web-cluster-lapp",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=stretched-web-cluster-lapp",
+    "img": "dist_lapp.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/2eFDTfqfUPKK1O",
+    "width": "670",
+    "height": "715",
+    "id": 18
+  },
+  {
+    "title": "Presentación de Arquitectura en la Nube",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/presentacin-de-arquitectura-en-la-nube",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=presentacin-de-arquitectura-en-la-nube",
+    "img": "nube.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/oCdHgCsvURMozW",
+    "width": "597",
+    "height": "486",
+    "id": 19
+  },
+  {
+    "title": "Backup aaS Solution Architecture",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/backup-aas-solution-architecture",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=backup-aas-solution-architecture",
+    "img": "backup.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/K77FL87LUt2THJ",
+    "width": "597",
+    "height": "486",
+    "id": 20
+  },
+  {
+    "title": "Arquitectura de Referencia - BGP - GSLB - SLB",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/arquitectura-de-referencia-bgp-gslb-slb",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=arquitectura-de-referencia-bgp-gslb-slb",
+    "img": "gslb.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/6dc1I2Bz5jWPDH",
+    "width": "670",
+    "height": "715",
+    "id": 21
+  },
+  {
+    "title": "Transparent Layer 2 Bandwidth Shaper",
+    "language": "unk",
+    "url": "https://www.slideshare.net/olafrv/transparent-layer-2-bandwidth-shaper",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=transparent-layer-2-bandwidth-shaper",
+    "img": "mikrotik-shaper.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/GkJUsD08UJo3sb",
+    "width": "597",
+    "height": "486",
+    "id": 22
+  },
+  {
+    "title": "Bandwidth control approach - Cisco vs Mikrotik on Multitenancy",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/bandwidth-control-approach-cisco-vs-mikrotik-on-multitenancy",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=bandwidth-control-approach-cisco-vs-mikrotik-on-multitenancy",
+    "img": "cisco-mikrotik-shaper.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/D7t6SZjE8M137S",
+    "width": "597",
+    "height": "486",
+    "id": 23
+  },
+  {
+    "title": "Insight - Architecture Design",
+    "language": "es",
+    "url": "https://es.slideshare.net/olafrv/insight-architecture-design-2018",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=insight-architecture-design-2018",
+    "img": "insight.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/itMcQ4xKQuf47L",
+    "width": "597",
+    "height": "486",
+    "id": 24
+  },
+  {
+    "title": "SRE Organizational Framework",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/sre-organizational-framework",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=sre-organizational-framework",
+    "img": "sre.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/s8f3C4OL7NKBtC",
+    "width": "597",
+    "height": "486",
+    "id": 25
+  },
+  {
+    "title": "AWS Network Architecture Rework",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/aws-network-architecture-rework",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=aws-network-architecture-rework",
+    "img": "aws.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/E3Fy2Sdg9cCEdF",
+    "width": "597",
+    "height": "486",
+    "id": 26
+  },
+  {
+    "title": "AWS Cost Optimizations Risks",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/aws-cost-optimizations-risks",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=aws-cost-optimizations-risks",
+    "img": "aws.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/3N0CelrOdjexHF",
+    "width": "597",
+    "height": "486",
+    "id": 27
+  },
+  {
+    "title": "KubeAdm vs. EKS - The IAM Roles Madness",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/kubeadm-vs-eks-the-iam-roles-madness",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=kubeadm-vs-eks-the-iam-roles-madness",
+    "img": "k8s.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/1gCb0vLs3ht7mg",
+    "width": "597",
+    "height": "486",
+    "id": 28
+  },
+  {
+    "title": "Kubernetes Workload Rebalancing",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/kubernetes-workload-rebalancing",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=kubernetes-workload-rebalancing",
+    "img": "k8s.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/etnJBmaLmdV8vy",
+    "width": "597",
+    "height": "486",
+    "id": 29
+  },
+  {
+    "title": "AWS Graviton3 and GP3",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/aws-graviton3-and-gp3",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=aws-graviton3-and-gp3",
+    "img": "aws.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/KepMhXDMWE8li1",
+    "width": "597",
+    "height": "486",
+    "id": 30
+  },
+  {
+    "title": "RabbitMQ Status Quo Critical Review",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/rabbitmq-status-quo-critical-reviewpdf",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=rabbitmq-status-quo-critical-reviewpdf",
+    "img": "aws.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/9gdFO2sNjS23X5",
+    "width": "670",
+    "height": "715",
+    "id": 31
+  },
+  {
+    "title": "PoC Azure Administration",
+    "language": "en",
+    "url": "https://www.slideshare.net/olafrv/poc-azure-administration",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=poc-azure-administration",
+    "img": "azure.svg",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/IbpwBxUGttsrK8",
+    "width": "597",
+    "height": "486",
+    "id": 32
+  }
 ]
