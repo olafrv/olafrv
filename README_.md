@@ -8,7 +8,7 @@ Just my personal Website  https://www.olafrv.com/ and its related software stack
 
 First, setup your development environment:
 
-* [Ubuntu Linux](https://ubuntu.com/)
+* [Ubuntu Linux](https://ubuntu.com/).
 * [Visual Studio Code](https://code.visualstudio.com/).
 * [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
@@ -23,7 +23,7 @@ npm run -l
 npm run dev
 ```
 
-Third, visit https://olafrv.github.io after commit and push.
+Third, visit https://[olafrv.cloudflare.pages](https://olafrv.pages.dev/) (CNAME of olafrv.com) after commit and push.
 
 ## References
 
@@ -37,6 +37,7 @@ Third, visit https://olafrv.github.io after commit and push.
 
 * https://vuejs.org/guide/quick-start.html (Composition API)
 * https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+* https://vuejs.org/guide/essentials/template-syntax.html
 
 ### Vuetify
 
@@ -63,7 +64,14 @@ Third, visit https://olafrv.github.io after commit and push.
 * https://github.com/prettier/eslint-config-prettier
 * https://github.com/prettier/prettier-vscode
 
-### GitHub Pages & Actions
+### CloudFlare Pages
+
+* https://developers.cloudflare.com/pages/
+* https://developers.cloudflare.com/dns/cname-flattening/
+* https://developers.cloudflare.com/pages/platform/limits
+* https://www.cloudflare.com/ips/
+
+### GitHub Pages & Actions (Deprecated)
 
 > Don't forget GitHub Pages > Select branch and Workflow > Add permissions
 
