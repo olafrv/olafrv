@@ -29,13 +29,14 @@ onMounted(()=>{
 <template>
     <v-container>
         <v-col>
-            <v-row v-if="error">
+            <v-row v-if="error" class="text-center">
+                <br>
                 <v-icon 
                     color="warning"
                     icon="mdi-alert" 
                     size="large"
                 />
-                Article '{{ id }}' not found.
+                Article '{{ id }}' moved or not found, please check the list <router-link to="/articles">here</router-link>.
             </v-row>
             <v-row v-if="!error" class="text-center">
                 <h1>{{ article.title }}</h1>
