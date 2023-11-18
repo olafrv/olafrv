@@ -21,22 +21,15 @@ function onClick(id) {
 </script>
 <template>
     <v-container>
-        <v-virtual-scroll
-        :height="600"
-        :items="articles"
-        >
+        <v-virtual-scroll :height="600" :items="articles">
             <template v-slot:default="{ item }">
-                <v-card>
-                    <template v-slot:title>
-                        <span class="text-wrap">
-                        <v-avatar>
-                            <v-img :src="`/blog/img/${item.img}`"></v-img>
-                        </v-avatar>
-                        &nbsp;
-                        <a @click="onClick(item.id)">{{ item.title }}</a>
-                        </span>
-                    </template>
-                </v-card>
+                <v-list-item @click="onClick(item.id)">
+                    <v-avatar>
+                        <v-img :src="`/blog/img/${item.img}`"></v-img>
+                    </v-avatar>
+                    &nbsp;
+                    {{ item.title }}
+                </v-list-item>
             </template>
         </v-virtual-scroll>
     </v-container>
