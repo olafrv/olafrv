@@ -18,5 +18,11 @@ const router = createRouter({
   ],
 });
 
+router.beforeEach((to) => {
+  if (to.path.includes('/futbol')) {
+    window.location.href = "https://app.olafrv.com/futbol";
+  }
+});
+
 export default router;
 
