@@ -14,11 +14,14 @@ First, setup your development environment:
 
 Second, install the app and test it locally:
 
-```
+```bash
 # Install NodeJS in Ubuntu Linux (Jammy):
 apt -y update
 apt -y install make
-make install
+# https://github.com/nodesource/distributions/blob/master/README.md
+curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+sudo apt-get install -y nodejs
 npm run -l
 npm run dev
 ```
