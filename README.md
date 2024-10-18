@@ -24,6 +24,8 @@ sudo -E bash nodesource_setup.sh
 sudo apt-get install -y nodejs
 npm run -l
 npm run dev
+# If you need it (latest docker official version)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/olafrv/my_collections/refs/heads/main/scripts/bash/install-docker.sh)"
 ```
 
 Third, visit https://[olafrv.cloudflare.pages](https://olafrv.pages.dev/) (CNAME of olafrv.com) after commit and push.
