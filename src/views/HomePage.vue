@@ -11,7 +11,7 @@ const image_src = ref("/img/hw_accel_fix.jpeg");
 const url = 'https://prod.spline.design/6KOeVzZFzpWkosQo/scene.splinecode';
 
 onMounted(()=>{
-    const app = null;
+    let app = null;
     let webgl = false;
     try {
         app = new Application(canvas.value);
