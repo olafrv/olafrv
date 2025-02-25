@@ -22,7 +22,7 @@ onMounted(()=>{
             continue;
         }
     }
-    webgl = false;
+    // webgl = false;
     if (!webgl) {
         console.log("WebGL not supported");
         showImg.value = true;
