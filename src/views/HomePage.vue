@@ -11,32 +11,15 @@ const image_src = ref("/img/hw_accel_fix.jpeg");
 const url = 'https://prod.spline.design/6KOeVzZFzpWkosQo/scene.splinecode';
 
 onMounted(()=>{
-    let app = null;
-    let webgl = false;
-    try {
-        app = new Application(canvas.value);
-        for (const context of ['webgl2', 'webgl', 'experimental-webgl', 'moz-webgl', 'webkit-3d']) {
-            try {
-                canvas.value.getContext(context);
-                webgl = true;
-                break;
-            } catch (e) {
-                continue;
-            }
-        }
-    } catch (error) {
-        console.log("Error creating Splide3D app", error);
-    }
-    if (!webgl) {
-        console.log("WebGL not supported");
-        showImg.value = true;
+    const app = new Application(canvas.value);
+    app.load(url).then(()=>{
+        console.log("Loaded Spline scene successfully");
         loading.value = false;
-    }else{
-        console.log("WebGL supported");
-        app.load(url).then(()=>{
-            loading.value = false;
-        });
-    }
+    }).catch((e)=>{
+        console.log("Error loading Spline scene", e);
+        loading.value = false;
+        showImg.value = true;
+    });
 })
 </script>
 <template>
@@ -57,7 +40,7 @@ onMounted(()=>{
             <br>
             <v-img ref="image"
                 :height="`400`"
-                :src="`${image_src}`" aspect-ratio="16/9" v-show="`!showImg`"/>
+                :src="`${image_src}`" aspect-ratio="16/9"/>
             
             </v-alert>
         </div>
