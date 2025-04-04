@@ -1,14 +1,36 @@
-version: '3'
-# networks:
-#  frontend:
-#    name: olafrv_com_frontend
-#    driver: bridge
+networks:
+  dmz:
+    name: dmz
+    driver: bridge
+
 services:
+
+  # Cloudflare
+  # Zero Trust Dashboard
+  # Tunnel: www.olafrv.com
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: olafrv_com_cloudflared
+    restart: always
+    command: tunnel run
+    env_file:
+      - .env
+    environment:
+      TZ: Europe/Berlin
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+    # Use 'sudo' on the host to set the UDP buffer size
+    # https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
+    # sysctls:
+      # - sysctl -w net.core.rmem_max=2500000
+      # - sysctl -w net.core.wmem_max=2500000
+    networks:
+      - dmz
+
   nginx:
     container_name: olafrv_com_nginx
     image: olafrv_com_nginx:latest
     build: 
       context: .
       dockerfile: Dockerfile
-#    networks:
-#      - frontend
+    networks:
+      - dmz
