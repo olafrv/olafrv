@@ -14,11 +14,16 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  server: {
-    warmup: {
-      clientFiles: [
-        './src/views/HomePage.vue',
-      ],
-    },
-  },
+  build: {
+    chunkSizeWarningLimit: "2000kB",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          axios: ['axios'],
+          splinetool: ['@splinetool/runtime']
+        }
+      },
+      external: []
+    }
+  }
 })

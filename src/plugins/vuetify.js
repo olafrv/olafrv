@@ -1,8 +1,16 @@
 import "vuetify/styles";
-import "@mdi/font/css/materialdesignicons.css";
 import { createVuetify } from "vuetify";
-import { aliases, mdi } from "vuetify/iconsets/mdi"; // Not optimal for production
+
+// https://vuetifyjs.com/en/features/icon-fonts/#mdi-css
+// import "@mdi/font/css/materialdesignicons.css"; // development
+// import "@mdi/font/css/materialdesignicons.min.css"; // development (minimized)
+// import { aliases, mdi } from "vuetify/iconsets/mdi"; // development
+
+// https://vuetifyjs.com/en/features/icon-fonts/#mdi-js-svg
+import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'; // production (optimal)
+
 import { md2 } from "vuetify/blueprints";
+import { mdiAccount } from "@mdi/js";
 
 export default createVuetify({
   theme: {
