@@ -1,6 +1,7 @@
 networks:
   dmz:
     name: dmz
+    external: false
     driver: bridge
 
 services:
@@ -15,7 +16,7 @@ services:
   # sudo sysctl -w net.core.rmem_max=7500000
   # sudo sysctl -w net.core.wmem_max=7500000
   # sudo sysctl --system
-  # systemctl restart systemd-sysctl
+  # sudo systemctl restart systemd-sysctl
   # --------------------------------------------------------
   cloudflared:
     image: cloudflare/cloudflared:latest
