@@ -6,11 +6,17 @@ networks:
 
 services:
 
-  # Cloudflare
-  # Zero Trust Dashboard
-  # Tunnel: www.olafrv.com
   # --------------------------------------------------------
-  # Use 'sudo' on the host to set the UDP buffer size
+  # Cloudflare Pages
+  # Dashboard -> Worker & Pages -> Deployment
+  # Authorize Cloudflare GitHub App -> Add 2x Custom Domains
+  # --------------------------------------------------------
+  # Cloudflare Tunnel (Optional)
+  # Dashboard -> Zero Trust -> Access -> Tunnel -> Configure
+  # Add 2x Rules -> (www.)olafrv.com/ => http://nginx:80
+  # Dashboard -> DNS -> Add 2x CNAMEs => Connector ID
+  # --------------------------------------------------------
+  # Use 'sudo' on the host to set UDP buffer size for QUIC
   # https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
   # sudo vim /etc/sysctl.d/99-olafrv-com.conf
   # sudo sysctl -w net.core.rmem_max=7500000
