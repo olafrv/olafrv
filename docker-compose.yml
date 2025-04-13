@@ -18,11 +18,11 @@ services:
     environment:
       TZ: Europe/Berlin
       TUNNEL_TOKEN: ${TUNNEL_TOKEN}
-    # Use 'sudo' on the host to set the UDP buffer size
-    # https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
-    # sysctls:
-      # - sysctl -w net.core.rmem_max=2500000
-      # - sysctl -w net.core.wmem_max=2500000
+      # Use 'sudo' on the host to set the UDP buffer size
+      # https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
+      # sudo vim /etc/sysctl.d/99-olafrv-com.conf
+      # sudo sysctl -w net.core.rmem_max=2500000
+      # sudo sysctl -w net.core.wmem_max=2500000
     networks:
       - dmz
 
