@@ -1,16 +1,20 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { useSnackStore } from '@/stores/SnackBar'
+import { useSnackStore } from '@/stores/SnackBar';
+import { 
+   mdiHomeCity, mdiLinkedin, mdiGithub, 
+   mdiPaperclip, mdiTrafficLight, mdiChevronLeft
+} from '@mdi/js';
  
 const drawer = ref(true);
 const rail = ref(true);
 const items = ref([
-  { title: 'Home', icon: 'mdi-home-city', path: '/' },
-  { title: 'Resume', icon: 'mdi-linkedin', path: 'https://www.linkedin.com/in/olafrv' },
-  { title: 'Projects', icon: 'mdi-github', path: 'https://github.com/olafrv' },
-  { title: 'Articles', icon: 'mdi-paperclip', path: '/articles' },
-  { title: 'Status', icon: 'mdi-traffic-light', path: 'https://status.olafrv.com/' },
+  { title: 'Home', icon: mdiHomeCity, path: '/' },
+  { title: 'Resume', icon: mdiLinkedin, path: 'https://www.linkedin.com/in/olafrv' },
+  { title: 'Projects', icon: mdiGithub, path: 'https://github.com/olafrv' },
+  { title: 'Articles', icon: mdiPaperclip, path: '/articles' },
+  { title: 'Status', icon: mdiTrafficLight, path: 'https://status.olafrv.com/' },
 ]);
 const router = useRouter();
 const store = useSnackStore()
@@ -47,7 +51,7 @@ function onClick(item) {
         <template v-slot:append>
           <v-btn
             variant="text"
-            icon="mdi-chevron-left"
+            :icon="mdiChevronLeft"
             @click.stop="rail = !rail"
           ></v-btn>
         </template>

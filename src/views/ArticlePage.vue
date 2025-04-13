@@ -1,7 +1,8 @@
 <script setup>
-import { ref , onMounted, onBeforeMount } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref , onBeforeMount } from 'vue';
+import { useRoute } from 'vue-router';
 import axios from 'axios';
+import { mdiAlert } from '@mdi/js';
 
 const route = useRoute()
 const id = ref(route.query.id)
@@ -24,35 +25,45 @@ onBeforeMount(() => {
 </script>
 
 <style scoped>
-:deep(*) {
-    all: revert;
-}
+:deep(iframe) { all: revert; }
 </style>
 
 <template>
     <v-container>
         <v-col>
-            <v-row v-if="error" class="text-center">
+            <v-row v-if="error" class="text-center d-flex flex-column">
                 <br>
-                <v-icon 
-                    color="warning"
-                    icon="mdi-alert" 
-                    size="large"
-                />
-                Article '{{ id }}' moved or not found, please check the list <router-link to="/articles">here</router-link>.
+                <v-alert
+                    :icon="mdiAlert"
+                    color="info"
+                    title="Article moved or not found"
+                    text=""
+                >
+                Please check the list <router-link to="/articles">here</router-link> (Article ID: '{{ id }}').
+                </v-alert>                
             </v-row>
-            <v-row v-if="visible" class="text-center">
-                <h1>{{ article.title }}</h1>
+            <v-row v-if="visible" class="text-center d-flex flex-column">
+                <h2>{{ article.title }}</h2>
+                <br>
             </v-row>
-            <v-row v-if="visible" class="text-center">
-                <div class="text-center">
-                    <iframe :src="article.embed_url" :width="article.width" :height="article.height" frameborder="0" 
-                        marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
+            <v-row v-if="visible" class="text-center d-flex flex-column">
+                <div>
+                    <iframe
+                        :src="article.embed_url" 
+                        :width="article.width" 
+                        :height="article.height" 
+                        frameborder="0" 
+                        marginwidth="0" 
+                        marginheight="0" 
+                        scrolling="no" 
+                        allow="fullscreen">
+                    </iframe>
                     <br>
                     <a :href="article.url" target="_blank">Download PDF</a>
                 </div>
             </v-row>
-            <v-row v-if="visible" class="text-center">
+            <v-row v-if="visible" class="text-center d-flex flex-column">
+                <br>
                 <span style="font-size: 10px;">
                     <b>DISCLAIMER:</b> All the content of this website is informative and non-commercial, 
                     does not imply a commitment to develop, launch or schedule delivery 

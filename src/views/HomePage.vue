@@ -1,7 +1,8 @@
 <script setup>
 import { Application } from '@splinetool/runtime';
-import { ref , onMounted } from 'vue'
-import LoadSpinner from '../components/LoadSpinner.vue'
+import { ref , onMounted } from 'vue';
+import LoadSpinner from '../components/LoadSpinner.vue';
+import { mdiAlert } from '@mdi/js';
 
 const loading = ref(true);
 const showImg = ref(false);
@@ -10,9 +11,11 @@ const image = ref(null);
 const image_src = ref("/img/hw_accel_fix.jpeg");
 const url = 'https://prod.spline.design/6KOeVzZFzpWkosQo/scene.splinecode';
 
-onMounted(()=>{
+onMounted(async ()=>{
     const app = new Application(canvas.value);
-    app.load(url).then(()=>{
+    await app.load(
+        url
+    ).then(()=>{
         console.log("Loaded Spline scene successfully");
         loading.value = false;
     }).catch((e)=>{
@@ -27,7 +30,7 @@ onMounted(()=>{
         <LoadSpinner v-show="loading"/>
         <div class="text-left" v-if="showImg">
             <v-alert
-                icon="mdi-alert"
+                :icon="mdiAlert"
                 color="info"
                 title="Browser without WebGL support"
                 text=""
