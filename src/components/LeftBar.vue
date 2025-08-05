@@ -46,7 +46,7 @@ function onClick(item) {
             image="https://avatars.githubusercontent.com/u/987499?s=48&v=4"
             size="32"
           ></v-avatar>
-          &nbsp;&nbsp;&nbsp;Home
+          &nbsp;&nbsp;&nbsp;olafrv.com
         </template>
         <template v-slot:append>
           <v-btn
