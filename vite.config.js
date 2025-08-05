@@ -14,6 +14,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  optimizeDeps: {
+    exclude: ['@splinetool/runtime'],
+    force: true,
+  },
   build: {
     chunkSizeWarningLimit: "2000kB",
     rollupOptions: {
