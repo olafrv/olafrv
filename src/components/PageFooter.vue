@@ -41,7 +41,7 @@ span#a33 {
     <div>
       {{ year > 2022 ? "@2022 - " : " @" }} {{ year }}
       &nbsp;
-      <span id="a33">Olaf Reitmaier</span>
+      <span id="a33">Olaf Reitmaier Veracierta</span>
     </div>
     <v-divider></v-divider>
   </v-footer>
