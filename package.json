@@ -9,21 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@splinetool/runtime": "^1.9.82",
-    "axios": "^1.8.4",
+    "@splinetool/runtime": "^1.10.57",
+    "axios": "^1.12.2",
     "pinia": "^2.3.1",
-    "vite-plugin-vuetify": "^2.1.1",
+    "vite-plugin-vuetify": "^2.1.2",
     "vue": "^3.2.45",
-    "vue-router": "^4.5.0",
-    "vuetify": "^3.8.1"
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.10.0"
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
     "@mdi/js": "^7.4.47",
-    "@vitejs/plugin-vue": "^5.2.3",
-    "cheerio": "^1.0.0",
-    "eslint": "^9.24.0",
-    "eslint-config-prettier": "^9.1.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "cheerio": "^1.1.2",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-vue": "^9.33.0",
     "prettier": "3.3.3",
     "vite": "^6.3.6"
