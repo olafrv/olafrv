@@ -1,12 +1,12 @@
-import fs from 'fs/promises';
 import axios from 'axios';
-import cheerio from 'cheerio';
+import { readFile, writeFile } from 'fs/promises';
+import * as cheerio from 'cheerio';
 
 async function readJSONFile() {
   try {
     const inputFile = './slideshare_export_enriched.json';
     const outputFile = '../public/blog/articles.json';
-    const data = await fs.readFile(inputFile, 'utf8');
+    const data = await readFile(inputFile, 'utf8');
     const jsonData = JSON.parse(data);
     const itemsArray = [];
     var i = 0;
@@ -48,7 +48,7 @@ async function readJSONFile() {
     
     }
 
-    await fs.writeFile(outputFile, JSON.stringify(itemsArray, null, 2));
+  await writeFile(outputFile, JSON.stringify(itemsArray, null, 2));
 
   } catch (error) {
     console.error('Error reading file or fetching data:', error);

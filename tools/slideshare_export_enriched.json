@@ -183,7 +183,7 @@
   },
   {
     "title": "Estrategia para Despliegue de Contenedores (Agile/DevOps)",
-    "description": "\r\nAll the content of this website is informative and non-commercial, does not imply a commitment to develop, launch or schedule delivery of any feature or functionality, should not rely on it in making decisions, incorporate or take it as a reference in a contract or academic matters. Likewise, the use, distribution and reproduction by any means, in whole or in part, without the authorization of the author and / or third-party copyright holders, as applicable, is prohibited. ",
+    "description": "All the content of this website is informative and non-commercial, does not imply a commitment to develop, launch or schedule delivery of any feature or functionality, should not rely on it in making decisions, incorporate or take it as a reference in a contract or academic matters. Likewise, the use, distribution and reproduction by any means, in whole or in part, without the authorization of the author and / or third-party copyright holders, as applicable, is prohibited. ",
     "tag": "containers,docker,kubernetes,devops,agile software development",
     "category": "presentation",
     "language": "es",
@@ -211,7 +211,7 @@
   },
   {
     "title": "Managed Cloud Services Revision",
-    "description": "\r\nAll the content of this website is informative and non-commercial, does not imply a commitment to develop, launch or schedule delivery of any feature or functionality, should not rely on it in making decisions, incorporate or take it as a reference in a contract or academic matters. Likewise, the use, distribution and reproduction by any means, in whole or in part, without the authorization of the author and / or third-party copyright holders, as applicable, is prohibited. ",
+    "description": "All the content of this website is informative and non-commercial, does not imply a commitment to develop, launch or schedule delivery of any feature or functionality, should not rely on it in making decisions, incorporate or take it as a reference in a contract or academic matters. Likewise, the use, distribution and reproduction by any means, in whole or in part, without the authorization of the author and / or third-party copyright holders, as applicable, is prohibited. ",
     "tag": "cloud,managed,aws,azure,amazon,services",
     "category": "presentation",
     "language": "es",
@@ -295,7 +295,7 @@
   },
   {
     "title": "Transparent Layer 2 Bandwidth Shaper",
-    "description": "\r\nAll the content of this website is informative and non-commercial, does not imply a commitment to develop, launch or schedule delivery of any feature or functionality, should not rely on it in making decisions, incorporate or take it as a reference in a contract or academic matters. Likewise, the use, distribution and reproduction by any means, in whole or in part, without the authorization of the author and / or third-party copyright holders, as applicable, is prohibited. ",
+    "description": "All the content of this website is informative and non-commercial, does not imply a commitment to develop, launch or schedule delivery of any feature or functionality, should not rely on it in making decisions, incorporate or take it as a reference in a contract or academic matters. Likewise, the use, distribution and reproduction by any means, in whole or in part, without the authorization of the author and / or third-party copyright holders, as applicable, is prohibited. ",
     "tag": "transparent,layer 2,bandwidth,packet,shaper,vlan,queue,mikrotik,ubuntu",
     "category": "presentation",
     "language": "unk",
@@ -446,5 +446,19 @@
     "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/IbpwBxUGttsrK8",
     "width": "597",
     "height": "486"
+  },
+  {
+    "title": "Neural Networks in a Nutshell: A practical review and usage",
+    "description": "All the content of this website is informative and non-commercial, does not imply a commitment to develop, launch or schedule delivery of any feature or functionality, should not rely on it in making decisions, incorporate or take it as a reference in a contract or academic matters. Likewise, the use, distribution and reproduction by any means, in whole or in part, without the authorization of the author and / or third-party copyright holders, as applicable, is prohibited.",
+    "tag": "AI,Neural Networks,Transformers,Diffusion,ChatGPT",
+    "category": "presentation",
+    "language": "en",
+    "privacy": "public",
+    "url": "https://www.slideshare.net/slideshow/neural-networks-in-a-nutshell-a-practical-review-and-usage/283655716",
+    "download_url": "https://www.slideshare.net/dwnld_file?s_title=neural-networks-in-a-nutshell-a-practical-review-and-usage",
+    "img": "nn.png",
+    "embed_url": "https://www.slideshare.net/slideshow/embed_code/key/mElcDgJ1bZcW9m",
+    "width": "510",
+    "height": "420"
   }
 ]
