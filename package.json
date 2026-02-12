@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@splinetool/runtime": "^1.10.76",
-    "axios": "^1.12.2",
+    "axios": "^1.13.5",
     "pinia": "^3.0.3",
     "vite-plugin-vuetify": "^2.1.2",
     "vue": "^3.5.22",
