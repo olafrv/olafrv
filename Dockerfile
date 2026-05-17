@@ -22,6 +22,7 @@ FROM nginx:1.27-alpine AS production
 # Copy built assets
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
+RUN chown -R app:app /usr/share/nginx/html
 # Optional: configure Nginx if you have custom config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
