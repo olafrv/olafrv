@@ -24,7 +24,9 @@
     "vuetify": "^3.12.6"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
