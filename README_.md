@@ -33,6 +33,8 @@ make sync
 
 ## Docker Compose
 
+Docker files live in [docker/](docker/) (`Dockerfile`, `docker-compose.yml`, `nginx.conf`).
+
 ```bash
 make up      # build and start nginx
 make down    # stop and remove containers

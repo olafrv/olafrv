@@ -41,8 +41,8 @@ services:
     container_name: olafrv_com_nginx
     image: olafrv_com_nginx:latest
     build:
-        context: .
-        dockerfile: Dockerfile
+        context: ..
+        dockerfile: docker/Dockerfile
         args:
           NODE_VERSION: ${NODE_IMAGE_TAG}
           PNPM_VERSION: ${PNPM_VERSION}

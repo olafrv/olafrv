@@ -27,7 +27,7 @@ FROM nginx:${NGINX_VERSION} AS production
 
 # Copy built assets
 COPY --from=build-stage /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 
 RUN chown -R nginx:nginx /usr/share/nginx/html \
     && mkdir -p /var/cache/nginx /var/run /run \

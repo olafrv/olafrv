@@ -31,10 +31,10 @@ sync: ## Sync versions into .nvmrc and package.json
 	@echo "Synced: node=$(NODE_VERSION) pnpm=$(PNPM_VERSION) node-image=$(NODE_IMAGE_TAG) nginx=$(NGINX_IMAGE_TAG)"
 
 up:
-	docker compose up -d --build
+	docker compose -f docker/docker-compose.yml up -d --build
 
 down:
-	docker compose down
+	docker compose -f docker/docker-compose.yml down
 
 logs:
-	docker compose logs -f
+	docker compose -f docker/docker-compose.yml logs -f

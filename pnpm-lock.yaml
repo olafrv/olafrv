@@ -52,7 +52,7 @@ importers:
         specifier: 10.9.1
         version: 10.9.1(eslint@9.39.4)(vue-eslint-parser@10.4.0(eslint@9.39.4))
       globals:
-        specifier: ^17.6.0
+        specifier: 17.6.0
         version: 17.6.0
       prettier:
         specifier: 3.6.2
