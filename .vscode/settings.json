@@ -1,4 +1,5 @@
 {
+    "npm.packageManager": "pnpm",
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     }

@@ -1,9 +1,9 @@
 FROM node:latest AS build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN corepack enable && corepack prepare pnpm@11 --activate && pnpm install --frozen-lockfile
 COPY ./ .
-RUN npm run build
+RUN pnpm build
 
 FROM nginx:latest AS production
 COPY --from=build-stage /app/dist /usr/share/nginx/html

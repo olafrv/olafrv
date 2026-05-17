@@ -10,25 +10,36 @@ First, setup your development environment:
 
 * [Ubuntu Linux](https://ubuntu.com/).
 * [Visual Studio Code](https://code.visualstudio.com/).
-* [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+* [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur). See [.vscode/extensions.json](.vscode/extensions.json) for recommended extensions.
 
-Second, install the app and test it locally:
+Second, install [Node.js, nvm, pnpm](https://nodejs.org/en/download):
 
 ```bash
-# Install NodeJS in Ubuntu Linux (Jammy):
-apt -y update
-apt -y install make
-# https://github.com/nodesource/distributions/blob/master/README.md
-curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
-sudo -E bash nodesource_setup.sh
-sudo apt-get install -y nodejs
-npm run -l
-npm run dev
-# If you need it (latest docker official version)
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 24
+
+# Verify the Node.js version:
+node -v
+
+# Download and install pnpm:
+corepack enable pnpm
+
+# Verify pnpm version:
+pnpm -v
+```
+
+Third, install Docker (optional):
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/olafrv/my_collections/refs/heads/main/scripts/bash/install-docker.sh)"
 ```
 
-Third, visit https://[olafrv.cloudflare.pages](https://olafrv.pages.dev/) (CNAME of olafrv.com) after commit and push.
+Finally, visit https://[olafrv.cloudflare.pages](https://olafrv.pages.dev/) (CNAME of olafrv.com) after commit and push.
 
 ## References
 
