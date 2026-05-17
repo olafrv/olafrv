@@ -9,53 +9,53 @@ importers:
   .:
     dependencies:
       '@splinetool/runtime':
-        specifier: ^1.12.94
+        specifier: 1.12.94
         version: 1.12.94
       axios:
-        specifier: ^1.16.1
+        specifier: 1.16.1
         version: 1.16.1
       pinia:
-        specifier: ^3.0.4
+        specifier: 3.0.4
         version: 3.0.4(vue@3.5.34)
       vite-plugin-vuetify:
-        specifier: ^2.1.3
+        specifier: 2.1.3
         version: 2.1.3(vite@7.3.3)(vue@3.5.34)(vuetify@3.12.6)
       vue:
-        specifier: ^3.5.34
+        specifier: 3.5.34
         version: 3.5.34
       vue-router:
-        specifier: ^4.6.4
+        specifier: 4.6.4
         version: 4.6.4(vue@3.5.34)
       vuetify:
-        specifier: ^3.12.6
+        specifier: 3.12.6
         version: 3.12.6(vite-plugin-vuetify@2.1.3)(vue@3.5.34)
     devDependencies:
       '@mdi/font':
-        specifier: ^7.4.47
+        specifier: 7.4.47
         version: 7.4.47
       '@mdi/js':
-        specifier: ^7.4.47
+        specifier: 7.4.47
         version: 7.4.47
       '@vitejs/plugin-vue':
-        specifier: ^6.0.7
+        specifier: 6.0.7
         version: 6.0.7(vite@7.3.3)(vue@3.5.34)
       cheerio:
-        specifier: ^1.2.0
+        specifier: 1.2.0
         version: 1.2.0
       eslint:
-        specifier: ^9.39.4
+        specifier: 9.39.4
         version: 9.39.4
       eslint-config-prettier:
-        specifier: ^10.1.8
+        specifier: 10.1.8
         version: 10.1.8(eslint@9.39.4)
       eslint-plugin-vue:
-        specifier: ^10.9.1
+        specifier: 10.9.1
         version: 10.9.1(eslint@9.39.4)(vue-eslint-parser@10.4.0(eslint@9.39.4))
       prettier:
         specifier: 3.6.2
         version: 3.6.2
       vite:
-        specifier: ^7.3.3
+        specifier: 7.3.3
         version: 7.3.3
 
 packages:
