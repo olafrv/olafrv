@@ -12,34 +12,38 @@ First, setup your development environment:
 * [Visual Studio Code](https://code.visualstudio.com/).
 * [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur). See [.vscode/extensions.json](.vscode/extensions.json) for recommended extensions.
 
-Second, install [Node.js, nvm, pnpm](https://nodejs.org/en/download):
+Second, install [Node.js, nvm, pnpm](https://nodejs.org/en/download) and project dependencies (versions pinned in [Makefile](Makefile)):
 
 ```bash
-# Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
-
-# in lieu of restarting the shell
-\. "$HOME/.nvm/nvm.sh"
-
-# Download and install Node.js:
-nvm install 24
-
-# Verify the Node.js version:
-node -v
-
-# Download and install pnpm:
-corepack enable pnpm
-
-# Verify pnpm version:
-pnpm -v
+make install
+make install-docker  # install Docker and Docker Compose (optional)
 ```
 
-Third, install Docker (optional):
+## Daily Development
+
+See [README_PNPM.md](README_PNPM.md) for pnpm usage, security configuration, and package management commands.
+
+## Version Management
+
+All pinned main package versions (Node.js, pnpm, Nginx) live in one place — the top of [Makefile](Makefile), after editing those values, run `make sync` to propagate them to `.nvmrc` and `package.json`.
+
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/olafrv/my_collections/refs/heads/main/scripts/bash/install-docker.sh)"
+make sync
 ```
+
+## Docker Compose
+
+```bash
+make up      # build and start nginx
+make down    # stop and remove containers
+make logs    # follow container logs
+```
+
+## Deployment to CloudFlare Pages
 
 Finally, visit https://[olafrv.cloudflare.pages](https://olafrv.pages.dev/) (CNAME of olafrv.com) after commit and push.
+
+> This is the reason why README is named README_.md, to avoid GitHub Pages picking it up as the default README.md and showing it on the website instead of the actual content. The deployment is now handled by CloudFlare Pages, which is more suitable for this use case.
 
 ## References
 

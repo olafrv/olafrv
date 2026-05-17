@@ -1,14 +1,20 @@
-# ---- Build Stage ---------------------------------------------------------
-FROM node:24.15.0-alpine AS build-stage
+ARG NODE_VERSION
+ARG PNPM_VERSION
+ARG NGINX_VERSION
+
+FROM node:${NODE_VERSION} AS build-stage
+
+ARG PNPM_VERSION
 
 WORKDIR /app
 
 # Copy only metadata first – this allows caching of deps
-COPY package*.json pnpm-lock.yaml ./
+COPY package*.json pnpm-lock.yaml .pnpmfile.cjs ./
 
 RUN corepack enable \
-    && corepack prepare pnpm@11 --activate \
-    && pnpm install --frozen-lockfile
+    && corepack prepare pnpm@${PNPM_VERSION} --activate \
+    && pnpm install --frozen-lockfile --ignore-scripts \
+    && pnpm rebuild esbuild
 
 # Now copy the rest of the source code
 COPY ./ .
@@ -17,18 +23,17 @@ COPY ./ .
 RUN pnpm build
 
 # ---- Production Stage ----------------------------------------------------
-FROM nginx:1.27-alpine AS production
+FROM nginx:${NGINX_VERSION} AS production
 
 # Copy built assets
 COPY --from=build-stage /app/dist /usr/share/nginx/html
-
-RUN chown -R app:app /usr/share/nginx/html
-# Optional: configure Nginx if you have custom config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Set non‑root user (optional, depends on your image)
-RUN addgroup -S app && adduser -S app -G app
-USER app
+RUN chown -R nginx:nginx /usr/share/nginx/html \
+    && mkdir -p /var/cache/nginx /var/run /run \
+    && chown -R nginx:nginx /var/cache/nginx /var/run /run
+
+USER nginx
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

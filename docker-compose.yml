@@ -1,13 +1,13 @@
-networks:
-  dmz:
-    name: dmz
-    external: false
-    driver: bridge
+# networks:
+#   dmz:
+#     name: dmz
+#     external: false
+#     driver: bridge
 
 services:
 
   # --------------------------------------------------------
-  # Cloudflare Pages
+  # Cloudflare Pages (Current)
   # Dashboard -> Worker & Pages -> Deployment
   # Authorize Cloudflare GitHub App -> Add 2x Custom Domains
   # --------------------------------------------------------
@@ -24,24 +24,30 @@ services:
   # sudo sysctl --system
   # sudo systemctl restart systemd-sysctl
   # --------------------------------------------------------
-  cloudflared:
-    image: cloudflare/cloudflared:latest
-    container_name: olafrv_com_cloudflared
-    restart: always
-    command: tunnel run
-    env_file:
-      - .env
-    environment:
-      TZ: Europe/Berlin
-      TUNNEL_TOKEN: ${TUNNEL_TOKEN}
-    networks:
-      - dmz
+  # cloudflared:
+  #   image: cloudflare/cloudflared:latest
+  #   container_name: olafrv_com_cloudflared
+  #   restart: always
+  #   command: tunnel run
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     TZ: Europe/Berlin
+  #     TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+  #   networks:
+  #     - dmz
 
   nginx:
     container_name: olafrv_com_nginx
     image: olafrv_com_nginx:latest
-    build: 
-      context: .
-      dockerfile: Dockerfile
-    networks:
-      - dmz
+    build:
+        context: .
+        dockerfile: Dockerfile
+        args:
+          NODE_VERSION: ${NODE_IMAGE_TAG}
+          PNPM_VERSION: ${PNPM_VERSION}
+          NGINX_VERSION: ${NGINX_IMAGE_TAG}
+    ports:
+      - "8080:80"  # comment out when using Cloudflare Tunnel (cloudflared)
+    # networks:
+    #   - dmz
