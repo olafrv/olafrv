@@ -1,58 +1,16 @@
-import axios from 'axios';
-import { readFile, writeFile } from 'fs/promises';
-import * as cheerio from 'cheerio';
+import { writeFile } from 'fs/promises';
+import slides from './slides.js';
 
-async function readJSONFile() {
-  try {
-    const inputFile = './slideshare_export_enriched.json';
-    const outputFile = '../public/blog/articles.json';
-    const data = await readFile(inputFile, 'utf8');
-    const jsonData = JSON.parse(data);
-    const itemsArray = [];
-    var i = 0;
+const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/olafrv/olafrv/main/slides';
+const outputFile = '../public/blog/articles.json';
 
-    for (const item of jsonData) {
-      const url = item.url;
-      console.log(`Fetching meta tags from ${url}`);
+const articles = slides.map((slide, index) => ({
+  id: index + 1,
+  title: slide.title,
+  language: slide.language,
+  img: slide.img,
+  pdf_url: `${GITHUB_RAW_BASE}/${slide.filename}`,
+}));
 
-      const response = await axios.get(url);
-      const html = response.data;
-
-      const $ = cheerio.load(html);
-
-      $('meta').each((index, element) => {
-        const tagName = $(element).attr('name') || $(element).attr('property');
-        const tagContent = $(element).attr('content');
-        console.log(tagName, tagContent);
-        if (tagName == "twitter:player"){
-            item.embed_url = tagContent;
-        }
-        if (tagName == "twitter:player:width"){
-            item.width = tagContent;
-        }
-        if (tagName == "twitter:player:height"){
-            item.height = tagContent;
-        }
-        if (!item.hasOwnProperty('img')) {
-          item.img = "linux.png";
-        }
-      });
-
-      item.id = ++i;
-      delete item.description;
-      delete item.privacy;
-      delete item.tag;
-      delete item.category;
-      itemsArray.push(item);
-      console.log(JSON.stringify(item));
-    
-    }
-
-  await writeFile(outputFile, JSON.stringify(itemsArray, null, 2));
-
-  } catch (error) {
-    console.error('Error reading file or fetching data:', error);
-  }
-}
-
-readJSONFile();
+await writeFile(outputFile, JSON.stringify(articles, null, 2));
+console.log(`Written ${articles.length} articles to ${outputFile}`);
