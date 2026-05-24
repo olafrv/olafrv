@@ -36,6 +36,14 @@ pnpm build     # Production build
 pnpm preview   # Preview build
 ```
 
+### Version Management
+
+All pinned versions (Node.js, pnpm, Nginx) are defined at the top of [Makefile](Makefile). After changing them, run `make sync` to propagate to `.nvmrc` and `package.json`:
+
+```bash
+make sync
+```
+
 ---
 
 ### Package Management and Audits

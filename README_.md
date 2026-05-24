@@ -15,7 +15,8 @@ First, setup your development environment:
 Second, install [Node.js, nvm, pnpm](https://nodejs.org/en/download) and project dependencies (versions pinned in [Makefile](Makefile)):
 
 ```bash
-make install
+sudo apt install make
+make install         # Install nvm, Node.js, pnpm, and project dependencies
 make install-docker  # install Docker and Docker Compose (optional)
 ```
 
