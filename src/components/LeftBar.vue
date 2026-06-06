@@ -2,15 +2,16 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useSnackStore } from '@/stores/SnackBar';
-import { 
-   mdiHomeCity, mdiLinkedin, mdiGithub, 
-   mdiPaperclip, mdiTrafficLight, mdiChevronLeft
+import {
+   mdiHomeCity, mdiLinkedin, mdiGithub,
+   mdiPaperclip, mdiTrafficLight, mdiChevronLeft, mdiSoccer
 } from '@mdi/js';
  
 const drawer = ref(true);
 const rail = ref(true);
 const items = ref([
   { title: 'Home', icon: mdiHomeCity, path: '/' },
+  { title: 'Quiniela', icon: mdiSoccer, path: 'https://app.olafrv.com/futbol/' },
   { title: 'Resume', icon: mdiLinkedin, path: 'https://www.linkedin.com/in/olafrv' },
   { title: 'Projects', icon: mdiGithub, path: 'https://github.com/olafrv' },
   { title: 'Articles', icon: mdiPaperclip, path: '/articles' },
