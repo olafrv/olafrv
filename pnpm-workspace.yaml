@@ -1,2 +1,7 @@
+minimumReleaseAge: 10080
+blockExoticSubdeps: true
+trustPolicy: no-downgrade
+strictPeerDependencies: true
+saveExact: true
 allowBuilds:
   esbuild: true

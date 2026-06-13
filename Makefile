@@ -1,6 +1,6 @@
 NODE_VERSION    := 24.15.0
 NODE_IMAGE_TAG  := 24.15.0-alpine
-PNPM_VERSION    := 11.1.2
+PNPM_VERSION    := 11.6.0
 NGINX_IMAGE_TAG := 1.27-alpine
 NVM_VERSION     := 0.40.4
 
