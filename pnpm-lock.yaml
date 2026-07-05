@@ -19,7 +19,7 @@ importers:
         version: 3.0.4(vue@3.5.34)
       vite-plugin-vuetify:
         specifier: 2.1.3
-        version: 2.1.3(vite@7.3.3)(vue@3.5.34)(vuetify@3.12.6)
+        version: 2.1.3(vite@7.3.5)(vue@3.5.34)(vuetify@3.12.6)
       vue:
         specifier: 3.5.34
         version: 3.5.34
@@ -41,7 +41,7 @@ importers:
         version: 7.4.47
       '@vitejs/plugin-vue':
         specifier: 6.0.7
-        version: 6.0.7(vite@7.3.3)(vue@3.5.34)
+        version: 6.0.7(vite@7.3.5)(vue@3.5.34)
       cheerio:
         specifier: 1.2.0
         version: 1.2.0
@@ -61,8 +61,8 @@ importers:
         specifier: 3.6.2
         version: 3.6.2
       vite:
-        specifier: 7.3.3
-        version: 7.3.3
+        specifier: 7.3.5
+        version: 7.3.5
 
 packages:
 
@@ -1199,8 +1199,8 @@ packages:
       vue: ^3.0.0
       vuetify: '>=3'
 
-  vite@7.3.3:
-    resolution: {integrity: sha512-/4XH147Ui7OGTjg3HbdWe5arnZQSbfuRzdr9Ec7TQi5I7R+ir0Rlc9GIvD4v0XZurELqA035KVXJXpR61xhiTA==}
+  vite@7.3.5:
+    resolution: {integrity: sha512-KuOaNhcnGFN2zIPGA7wRmzF+lJA1sea7rHq17aiJ++9lzY1WWG6Jpwqwe1KNbRVPIqHmr8GLYx7jbrQcN/7/ww==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1601,10 +1601,10 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@vitejs/plugin-vue@6.0.7(vite@7.3.3)(vue@3.5.34)':
+  '@vitejs/plugin-vue@6.0.7(vite@7.3.5)(vue@3.5.34)':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 7.3.3
+      vite: 7.3.5
       vue: 3.5.34
 
   '@vue/compiler-core@3.5.34':
@@ -2320,18 +2320,18 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-vuetify@2.1.3(vite@7.3.3)(vue@3.5.34)(vuetify@3.12.6):
+  vite-plugin-vuetify@2.1.3(vite@7.3.5)(vue@3.5.34)(vuetify@3.12.6):
     dependencies:
       '@vuetify/loader-shared': 2.1.2(vue@3.5.34)(vuetify@3.12.6)
       debug: 4.4.3
       upath: 2.0.1
-      vite: 7.3.3
+      vite: 7.3.5
       vue: 3.5.34
       vuetify: 3.12.6(vite-plugin-vuetify@2.1.3)(vue@3.5.34)
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.3.3:
+  vite@7.3.5:
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -2376,7 +2376,7 @@ snapshots:
     dependencies:
       vue: 3.5.34
     optionalDependencies:
-      vite-plugin-vuetify: 2.1.3(vite@7.3.3)(vue@3.5.34)(vuetify@3.12.6)
+      vite-plugin-vuetify: 2.1.3(vite@7.3.5)(vue@3.5.34)(vuetify@3.12.6)
 
   whatwg-encoding@3.1.1:
     dependencies:
