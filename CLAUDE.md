@@ -20,3 +20,10 @@ change that violates it must not be committed.
   `GEMINI.md`, `CONVENTIONS.md`. If one is missing it, propose adding it. If
   you are an agent whose instruction file isn't in the table in
   `PNPM_SECURITY.md`, propose adding your file there too.
+
+## Git authentication
+
+`gh` is installed and authenticated (`gh auth status`) with a stored
+credential helper (`credential.helper=store`), so `git push`/`git pull` over
+HTTPS work without prompting. No need to ask the user to authenticate before
+running git network commands.
