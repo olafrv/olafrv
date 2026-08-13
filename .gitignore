@@ -17,6 +17,9 @@ dist
 dist-ssr
 *.local
 
+# Windows download metadata (WSL/Windows filesystem artifacts)
+*:Zone.Identifier
+
 # IDE directories and files
 .vscode/*
 !.vscode/extensions.json
