@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Neural Networks in a Nutshell: A practical review and usage (2025)",
+    "year": 2025,
     "language": "en",
     "img": "nn.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2025-10-06-nninanutshellfull-251006200109-1af42b1c.pdf"
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "title": "KubeAdm vs. EKS - The IAM Roles Madness (2023)",
+    "year": 2023,
     "language": "en",
     "img": "k8s.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2023-02-01-kubeadmvs-231104174828-0b290b96.pdf"
@@ -16,6 +18,7 @@
   {
     "id": 3,
     "title": "Kubernetes Workload Rebalancing (2023)",
+    "year": 2023,
     "language": "en",
     "img": "k8s.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2023-02-01-kubernetesworkloadrebalancing-231104175222-ad30452b.pdf"
@@ -23,6 +26,7 @@
   {
     "id": 4,
     "title": "AWS Graviton3 and GP3 (2023)",
+    "year": 2023,
     "language": "en",
     "img": "aws.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2023-10-05-awsgraviton3andgp3-231104175510-f125e5b0.pdf"
@@ -30,6 +34,7 @@
   {
     "id": 5,
     "title": "RabbitMQ Status Quo Critical Review (2023)",
+    "year": 2023,
     "language": "en",
     "img": "aws.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/rabbitmqstatusquocriticalreview-231104205418-7ca1dd43.pdf"
@@ -37,6 +42,7 @@
   {
     "id": 6,
     "title": "AWS Cost Optimizations Risks (2022)",
+    "year": 2022,
     "language": "en",
     "img": "aws.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2022-09-01-awscostoptimizationsrisks-231104174539-6741ad90.pdf"
@@ -44,6 +50,7 @@
   {
     "id": 7,
     "title": "AWS Network Architecture Rework (2021)",
+    "year": 2021,
     "language": "en",
     "img": "aws.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2021-04-16-awsnetworkarchitecturerework-231104173943-a64c37a2.pdf"
@@ -51,6 +58,7 @@
   {
     "id": 8,
     "title": "SRE Organizational Framework (2019)",
+    "year": 2019,
     "language": "en",
     "img": "sre.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2019-05-12-sreorganizationalframework-231104173245-c3ced97d.pdf"
@@ -58,6 +66,7 @@
   {
     "id": 9,
     "title": "PoC Azure Administration (2019)",
+    "year": 2019,
     "language": "en",
     "img": "azure.svg",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/19-02-06-pocazureadministration-231115122547-b9743c78.pdf"
@@ -65,6 +74,7 @@
   {
     "id": 10,
     "title": "Plataforma de Interoperabilidad del Instituciones Gubernamentales (2018)",
+    "year": 2018,
     "language": "es",
     "img": "interop_gov.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/interoperabilidad-egob-maczul-olaf-181204174305.pdf"
@@ -72,6 +82,7 @@
   {
     "id": 11,
     "title": "Hyper-Cloud Services CAPEX/OPEX and Price Estimation (2018)",
+    "year": 2018,
     "language": "en",
     "img": "capex_opex_hypercloud.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/itcapexopexpriceroi-181201024440.pdf"
@@ -79,6 +90,7 @@
   {
     "id": 12,
     "title": "Business intelligence through big data and cloud computing (2018)",
+    "year": 2018,
     "language": "es",
     "img": "biucab.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/18-11-23-businessintelligencethroughbigdataandcloudcomputing-181205115947.pdf"
@@ -86,6 +98,7 @@
   {
     "id": 13,
     "title": "Transformacion Digital (2018)",
+    "year": 2018,
     "language": "es",
     "img": "dx.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/17-05-30-transformaciondigitalalltechandconstructtechmayo2018-181205125342.pdf"
@@ -93,6 +106,7 @@
   {
     "id": 14,
     "title": "On-Premise Private Cloud Architecture (2018)",
+    "year": 2018,
     "language": "en",
     "img": "private_cloud.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/2018-12-01-on-premiseprivatecloudarchitecture-181205173145.pdf"
@@ -100,6 +114,7 @@
   {
     "id": 15,
     "title": "Estrategia para Despliegue de Contenedores (Agile/DevOps) (2018)",
+    "year": 2018,
     "language": "es",
     "img": "docker.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/18-10-25-estrategiadesplieguecontenedores-181205174749.pdf"
@@ -107,6 +122,7 @@
   {
     "id": 16,
     "title": "Ingeniería de Software (2018)",
+    "year": 2018,
     "language": "es",
     "img": "ingsw.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/18-06-10-ingenieriadesoftwaredaycofactory-181205194324.pdf"
@@ -114,6 +130,7 @@
   {
     "id": 17,
     "title": "Managed Cloud Services Revision (2018)",
+    "year": 2018,
     "language": "es",
     "img": "cms.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/18-11-07-managedcloudservicesrevision-181205195829.pdf"
@@ -121,6 +138,7 @@
   {
     "id": 18,
     "title": "Multi-Cloud Connection Architecture (2018)",
+    "year": 2018,
     "language": "es",
     "img": "mcc.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/18-08-01-multi-cloudconnectionarchitecture-181205201438.pdf"
@@ -128,6 +146,7 @@
   {
     "id": 19,
     "title": "Arquitectura de Referencia - BGP - GSLB - SLB (2018)",
+    "year": 2018,
     "language": "es",
     "img": "gslb.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/18-06-20-arquitecturadereferencia-bgp-gslb-slb-181207204410.pdf"
@@ -135,6 +154,7 @@
   {
     "id": 20,
     "title": "Insight - Architecture Design (2018)",
+    "year": 2018,
     "language": "es",
     "img": "insight.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/insight-architecturedesign2018-181215193252.pdf"
@@ -142,6 +162,7 @@
   {
     "id": 21,
     "title": "Ciberseguridad en la nube (2017)",
+    "year": 2017,
     "language": "es",
     "img": "ciberseguridad.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/ciberseguridadenlanubenov2017v2-181205113519.pdf"
@@ -149,6 +170,7 @@
   {
     "id": 22,
     "title": "Continuidad Operativa, Conectividad y Seguridad (2017)",
+    "year": 2017,
     "language": "es",
     "img": "continuidad.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/17-05-17-cont-181205130259.pdf"
@@ -156,6 +178,7 @@
   {
     "id": 23,
     "title": "Distributed Web Cluster (LAPP) (2017)",
+    "year": 2017,
     "language": "es",
     "img": "dist_lapp.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/17-03-20-clusterappwebdistribuidas-linux-apache-phppostgresql-181205201919.pdf"
@@ -163,6 +186,7 @@
   {
     "id": 24,
     "title": "Backup aaS Solution Architecture (2017)",
+    "year": 2017,
     "language": "en",
     "img": "backup.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/17-01-18-backupaassolutionarchitecture-181207203710.pdf"
@@ -170,6 +194,7 @@
   {
     "id": 25,
     "title": "MySQL HA Solutions (Recopilation) (2016)",
+    "year": 2016,
     "language": "en",
     "img": "mysql.jpg",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/16-11-25-mysqlhasolutions-181204182328.pdf"
@@ -177,6 +202,7 @@
   {
     "id": 26,
     "title": "Estructura de Almacenamiento Virtualizado (2016)",
+    "year": 2016,
     "language": "es",
     "img": "estructura-almacenamiento-virtualizado.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/16-08-29-almacenamientovirtualizado-181204213531.pdf"
@@ -184,6 +210,7 @@
   {
     "id": 27,
     "title": "Multimedia Streaming Architecture (2016)",
+    "year": 2016,
     "language": "en",
     "img": "streaming.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/16-11-08-digitalstreamingarchitecture-181205153003.pdf"
@@ -191,6 +218,7 @@
   {
     "id": 28,
     "title": "Presentación de Arquitectura en la Nube (2016)",
+    "year": 2016,
     "language": "es",
     "img": "nube.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/16-04-22-presentacionarquitecturaenlanube-181207203020.pdf"
@@ -198,6 +226,7 @@
   {
     "id": 29,
     "title": "Transparent Layer 2 Bandwidth Shaper (2016)",
+    "year": 2016,
     "language": "unk",
     "img": "mikrotik-shaper.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/16-06-23-transparentlayer2bandwidthshaper-181207205150.pdf"
@@ -205,6 +234,7 @@
   {
     "id": 30,
     "title": "Bandwidth control approach - Cisco vs Mikrotik on Multitenancy (2016)",
+    "year": 2016,
     "language": "en",
     "img": "cisco-mikrotik-shaper.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/16-06-23-bandwidthcontrolapproach-ciscovsmikrotikonmultitenancy-181207205733.pdf"
@@ -212,6 +242,7 @@
   {
     "id": 31,
     "title": "Virtualización de GNU/Linux Debian con Xen (2013)",
+    "year": 2013,
     "language": "es",
     "img": "xendeb.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/virtualizacin-con-xen-debian-v3-130828213634-phpapp02.pdf"
@@ -219,6 +250,7 @@
   {
     "id": 32,
     "title": "High Availability, Load Balancing and Replication on Linux (2013)",
+    "year": 2013,
     "language": "es",
     "img": "cluster.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/halbr-linux-130828214602-phpapp02.pdf"
@@ -226,6 +258,7 @@
   {
     "id": 33,
     "title": "Subversion v6 (2013)",
+    "year": 2013,
     "language": "es",
     "img": "subversion.png",
     "pdf_url": "https://raw.githubusercontent.com/olafrv/olafrv/main/slides/subversionv6-131219125554-phpapp01.pdf"
