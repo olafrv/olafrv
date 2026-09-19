@@ -7,7 +7,7 @@ const articles = ref([]);
 onMounted(()=>{
     const file = '/blog/articles.json'
     axios.get(file).then(function (response){
-        articles.value = response.data;
+        articles.value = [...response.data].sort((a, b) => b.year - a.year);
     })
 })
 const router = useRouter();
