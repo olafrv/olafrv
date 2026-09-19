@@ -13,7 +13,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src/",
-    "audit": "pnpm audit --audit-level=moderate"
+    "audit": "pnpm audit --audit-level=moderate",
+    "check:deny-rules": "node scripts/check-deny-rules.mjs"
   },
   "dependencies": {
     "@splinetool/runtime": "1.12.94",
