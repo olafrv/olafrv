@@ -9,6 +9,7 @@ const articles = [...slides]
   .map((slide, index) => ({
     id: index + 1,
     title: `${slide.title} (${slide.year})`,
+    year: slide.year,
     language: slide.language,
     img: slide.img,
     pdf_url: `${GITHUB_RAW_BASE}/${slide.filename}`,
