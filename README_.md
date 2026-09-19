@@ -1,6 +1,7 @@
 # Olaf Reitmaier
 
 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/clx9.svg)](https://status.olafrv.com/)
+[![CI](https://github.com/olafrv/olafrv/actions/workflows/ci.yml/badge.svg)](https://github.com/olafrv/olafrv/actions/workflows/ci.yml)
 
 Just my personal Website  https://www.olafrv.com/ and its related software stack.
 
