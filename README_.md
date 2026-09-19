@@ -23,7 +23,7 @@ make install-docker  # install Docker and Docker Compose (optional)
 
 ## Daily Development
 
-See [README_PNPM.md](README_PNPM.md) for pnpm usage, security configuration, and package management commands.
+See [PNPM_SECURITY.md](PNPM_SECURITY.md) for pnpm usage, security configuration, and package management commands.
 
 ## Version Management
 
