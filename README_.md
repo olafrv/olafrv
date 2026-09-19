@@ -43,6 +43,24 @@ make down    # stop and remove containers
 make logs    # follow container logs
 ```
 
+## Blog Articles
+
+Articles shown on the [Articles page](src/views/ArticlesPage.vue) are listed in
+[public/blog/articles.json](public/blog/articles.json), sorted newest-first by
+`year` at render time. To add a new article:
+
+1. Add the PDF to [slides/](slides/).
+2. Add a thumbnail image to [public/blog/img/](public/blog/img/).
+3. Append an entry to [public/blog/articles.json](public/blog/articles.json) with:
+   * `id`: next unused integer.
+   * `title`: article title, ending with the publication year, e.g. `"My Talk (2026)"`.
+   * `year`: publication year as a number, e.g. `2026`.
+   * `language`: `"es"`, `"en"`, or `"unk"`.
+   * `img`: filename of the thumbnail added in step 2.
+   * `pdf_url`: `https://raw.githubusercontent.com/olafrv/olafrv/main/slides/<pdf filename>`.
+
+No build step is required — the list sorts itself by `year` in the browser.
+
 ## Deployment to CloudFlare Pages
 
 Finally, visit https://[olafrv.cloudflare.pages](https://olafrv.pages.dev/) (CNAME of olafrv.com) after commit and push.
