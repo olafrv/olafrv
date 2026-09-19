@@ -7,7 +7,7 @@ const articles = ref([]);
 onMounted(()=>{
     const file = '/blog/articles.json'
     axios.get(file).then(function (response){
-        articles.value = response.data.reverse();
+        articles.value = response.data;
     })
 })
 const router = useRouter();
