@@ -154,6 +154,15 @@ fired during setup). Measure 9 only takes effect once a CI/CD pipeline exists.
   less than 7 days ago (pnpm v11+; the v11 default is `1440` = 1 day).
 - Protects against newly published, not-yet-detected supply-chain compromises.
 - Set to `0` to disable.
+- `minimumReleaseAgeExclude` — allow specific **exact** `name@version` entries to
+  bypass the age check. Narrow, documented exceptions only (same spirit as
+  `trustPolicyExclude`):
+  - Only for urgent security fixes, and only with explicit human approval.
+  - Exact versions only — never a bare package name or a range.
+  - Each block must carry a comment with the approval date and a removal date.
+  - Remove the entries once the releases are older than `minimumReleaseAge`.
+  - CI's `--frozen-lockfile` install re-checks the lockfile against this policy,
+    so a one-off CLI flag is not enough; the exception must be committed.
 
 ### 4. Blocked Build Scripts (`allowBuilds`)
 - pnpm does **not** run dependency lifecycle scripts (`postinstall`, etc.) by
@@ -253,6 +262,8 @@ pnpm v11+ reads behavioral settings from YAML, not `.npmrc`. Settings used here:
 
 ```yaml
 minimumReleaseAge: 10080
+minimumReleaseAgeExclude:  # narrow, time-boxed exceptions only (exact name@version)
+  # - 'example-pkg@1.2.3'  # approved YYYY-MM-DD, remove after YYYY-MM-DD
 blockExoticSubdeps: true
 trustPolicy: no-downgrade
 trustPolicyExclude:        # narrow, documented exceptions only
