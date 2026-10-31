@@ -11,4 +11,12 @@ overrides:
   js-yaml: ">=4.3.2 <5.0.0"
   undici: ">=7.29.0 <8.0.0"
   postcss: ">=8.5.23 <9.0.0"
-  brace-expansion: ">=1.1.16 <2.0.0"
+  brace-expansion: ">=5.0.12 <6.0.0"
+  minimatch: "11.0.1"
+# One-time, human-authorized exception (2026-10-31) to the 7-day minimumReleaseAge
+# so these security fixes can land before the window elapses. Exact versions only.
+# REMOVE this block once all three are older than 7 days (after 2026-11-04).
+minimumReleaseAgeExclude:
+  - follow-redirects@1.16.2
+  - minimatch@11.0.1
+  - "@isaacs/nonrecursive-glob-match@1.0.3"
