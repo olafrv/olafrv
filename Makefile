@@ -9,7 +9,8 @@
 NODE_VERSION    := $(shell cat .nvmrc)
 NODE_IMAGE_TAG  := $(NODE_VERSION)-alpine
 PNPM_VERSION    := $(shell sed -n 's/.*"packageManager": *"pnpm@\([0-9.]*\).*/\1/p' package.json)
-NGINX_IMAGE_TAG := 1.27-alpine
+# nginx >= 1.30.7 fixes CVE-2026-123633 / CVE-2026-123007 (HTTP/2 RCE, Wiz Nov 2026)
+NGINX_IMAGE_TAG := 1.30.7-alpine
 NVM_VERSION     := 0.40.4
 
 export NODE_IMAGE_TAG
